@@ -2,7 +2,7 @@ name: Casio Discount Monitor
 
 on:
   schedule:
-    # Runs every 10 minutes, 24/7
+    # Runs automatically every 10 minutes, 24/7
     - cron: '*/10 * * * *'
   workflow_dispatch: # Allows manual trigger anytime from GitHub UI
 
@@ -37,7 +37,9 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/state.json
           if ! git diff --quiet --staged; then
+            echo "State changes detected, committing..."
             git commit -m "Update discount state [skip ci]"
-            git pull --rebase origin main || true
-            git push origin main
+            git push origin main || (git pull --rebase -X theirs origin main && git push origin main) || echo "Push skipped: state will sync on next run"
+          else
+            echo "No price changes detected. State is up to date."
           fi
