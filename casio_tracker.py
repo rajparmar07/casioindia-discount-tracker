@@ -208,10 +208,10 @@ def run_scan(
     scan_all: bool,
     dry_run: bool = False
 ) -> int:
-    """Scan product catalog and trigger alerts for new discounts or price drops."""
     state = load_state(state_file)
     products = get_all_products(scan_all=scan_all)
     alerts_triggered = 0
+    state_changed = False
 
     for product in products:
         handle = product.get("handle", "")
@@ -232,57 +232,52 @@ def run_scan(
                 continue
 
             has_discount = compare_at > price and price > 0
-            if not has_discount:
-                # Update current non-discounted price quietly
-                state[key] = {
-                    "title": product_title,
-                    "price": price,
-                    "compare_at": compare_at,
-                    "discount_pct": 0,
-                    "available": is_available,
-                    "updated_at": time.time()
-                }
-                continue
-
-            discount_pct = round(((compare_at - price) / compare_at) * 100, 1)
-            savings = round(compare_at - price, 2)
-
-            if discount_pct < min_discount:
-                continue
+            discount_pct = round(((compare_at - price) / compare_at) * 100, 1) if has_discount else 0.0
+            savings = round(compare_at - price, 2) if has_discount else 0.0
 
             prev_record = state.get(key)
+
+            # Check if this item is completely identical to stored state
+            if prev_record:
+                if (prev_record.get("price") == price and
+                    prev_record.get("compare_at") == compare_at and
+                    prev_record.get("available") == is_available and
+                    prev_record.get("discount_pct") == discount_pct):
+                    # Zero change, skip modifying state
+                    continue
+
+            # If we reached here, price, availability, or discount actually changed
+            state_changed = True
+
             trigger_alert = False
             alert_type = "NEW_DISCOUNT"
 
-            if not prev_record:
-                if is_available:
-                    trigger_alert = True
-                    alert_type = "NEW_DISCOUNT"
-            else:
-                prev_price = prev_record.get("price", price)
-                prev_discount = prev_record.get("discount_pct", 0)
-                prev_available = prev_record.get("available", False)
+            if has_discount and discount_pct >= min_discount:
+                if not prev_record:
+                    if is_available:
+                        trigger_alert = True
+                        alert_type = "NEW_DISCOUNT"
+                else:
+                    prev_price = prev_record.get("price", price)
+                    prev_discount = prev_record.get("discount_pct", 0)
+                    prev_available = prev_record.get("available", False)
 
-                # Event 1: Price dropped even lower
-                if price < prev_price and is_available:
-                    trigger_alert = True
-                    alert_type = "PRICE_DROP"
-                # Event 2: Previously out of stock while discounted, now back in stock!
-                elif is_available and not prev_available and prev_discount > 0:
-                    trigger_alert = True
-                    alert_type = "RESTOCK"
-                # Event 3: Previously recorded without discount, now discounted
-                elif is_available and prev_discount == 0:
-                    trigger_alert = True
-                    alert_type = "NEW_DISCOUNT"
+                    if price < prev_price and is_available:
+                        trigger_alert = True
+                        alert_type = "PRICE_DROP"
+                    elif is_available and not prev_available and prev_discount > 0:
+                        trigger_alert = True
+                        alert_type = "RESTOCK"
+                    elif is_available and prev_discount == 0:
+                        trigger_alert = True
+                        alert_type = "NEW_DISCOUNT"
 
             state[key] = {
                 "title": product_title,
                 "price": price,
                 "compare_at": compare_at,
                 "discount_pct": discount_pct,
-                "available": is_available,
-                "updated_at": time.time()
+                "available": is_available
             }
 
             if trigger_alert:
@@ -307,9 +302,11 @@ def run_scan(
                     )
                     time.sleep(1.0)
 
-    if not dry_run:
+    if not dry_run and state_changed:
         save_state(state_file, state)
         logger.info(f"State saved ({len(state)} variants tracked). Alerts sent: {alerts_triggered}")
+    elif not dry_run:
+        logger.info("No price or stock changes detected. State file unchanged.")
     else:
         logger.info(f"Dry run complete. Potential alerts detected: {alerts_triggered}")
 

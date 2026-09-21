@@ -6,6 +6,11 @@ on:
     - cron: '*/10 * * * *'
   workflow_dispatch: # Allows manual trigger anytime from GitHub UI
 
+# Ensure only one instance of the monitor runs at a time
+concurrency:
+  group: casio-discount-monitor
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -16,7 +21,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
