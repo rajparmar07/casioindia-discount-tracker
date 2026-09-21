@@ -1,5 +1,7 @@
 # ⌚ Casio India Real-Time Discount Tracker
 
+[![Casio Discount Monitor](https://github.com/rajparmar07/casioindia-discount-tracker/actions/workflows/tracker.yml/badge.svg)](https://github.com/rajparmar07/casioindia-discount-tracker/actions)
+
 A lightweight, automated alert bot that continuously monitors [Casio India (casiostore.bhawar.com)](https://casiostore.bhawar.com/collections/watches) for random price drops and discounts, sending instant notifications directly to your **Telegram** account with product photo, discount percentage, savings, and a direct 1-click buy link.
 
 ---
