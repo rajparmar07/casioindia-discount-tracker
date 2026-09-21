@@ -116,9 +116,13 @@ def send_telegram_alert(
     image_url: Optional[str] = None,
     alert_type: str = "NEW_DISCOUNT"
 ) -> bool:
-    """Send formatted rich notification to Telegram with inline button."""
+    """Send formatted rich notification to one or multiple Telegram chat/channel IDs."""
     if not bot_token or not chat_id:
         logger.error("Telegram Bot Token or Chat ID not configured!")
+        return False
+
+    targets = [c.strip() for c in str(chat_id).split(",") if c.strip()]
+    if not targets:
         return False
 
     if alert_type == "RESTOCK":
@@ -135,7 +139,7 @@ def send_telegram_alert(
         f"💰 <b>Deal Price:</b> ₹{price:,.2f}  <s>₹{compare_at:,.2f}</s>\n"
         f"💵 <b>You Save:</b> ₹{savings:,.2f}\n"
         f"📦 <b>Stock:</b> In Stock ✅\n\n"
-        f'🔗 <a href="{url}">👉 Click here to View & Buy on Casio Store</a>'
+        f'🔗 <a href="{url}">👉 View Watch on Casio Store</a>'
     )
 
     reply_markup = {
@@ -144,51 +148,56 @@ def send_telegram_alert(
         ]
     }
 
-    # Attempt sending with Photo first
-    if image_url:
-        send_photo_url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
-        payload = {
-            "chat_id": chat_id,
-            "photo": image_url,
-            "caption": caption,
-            "parse_mode": "HTML",
-            "reply_markup": reply_markup
-        }
-        try:
-            req = urllib.request.Request(
-                send_photo_url,
-                data=json.dumps(payload).encode("utf-8"),
-                headers={"Content-Type": "application/json"}
-            )
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                if resp.status == 200:
-                    logger.info(f"Telegram photo alert sent: {title}")
-                    return True
-        except Exception as e:
-            logger.warning(f"Failed to send photo alert ({e}), falling back to text message...")
+    all_success = True
+    for target_id in targets:
+        sent = False
+        # Try photo first if available
+        if image_url:
+            send_photo_url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
+            payload = {
+                "chat_id": target_id,
+                "photo": image_url,
+                "caption": caption,
+                "parse_mode": "HTML",
+                "reply_markup": reply_markup
+            }
+            try:
+                req = urllib.request.Request(
+                    send_photo_url,
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers={"Content-Type": "application/json"}
+                )
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    if resp.status == 200:
+                        logger.info(f"Telegram photo alert sent to {target_id}: {title}")
+                        sent = True
+            except Exception as e:
+                logger.warning(f"Failed to send photo to {target_id} ({e}), trying text message...")
 
-    # Text message fallback
-    send_msg_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    payload = {
-        "chat_id": chat_id,
-        "text": caption,
-        "parse_mode": "HTML",
-        "disable_web_page_preview": False,
-        "reply_markup": reply_markup
-    }
-    try:
-        req = urllib.request.Request(
-            send_msg_url,
-            data=json.dumps(payload).encode("utf-8"),
-            headers={"Content-Type": "application/json"}
-        )
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            if resp.status == 200:
-                logger.info(f"Telegram text alert sent: {title}")
-                return True
-    except Exception as e:
-        logger.error(f"Failed to send Telegram message: {e}")
-        return False
+        if not sent:
+            send_msg_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+            payload = {
+                "chat_id": target_id,
+                "text": caption,
+                "parse_mode": "HTML",
+                "disable_web_page_preview": False,
+                "reply_markup": reply_markup
+            }
+            try:
+                req = urllib.request.Request(
+                    send_msg_url,
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers={"Content-Type": "application/json"}
+                )
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    if resp.status == 200:
+                        logger.info(f"Telegram text alert sent to {target_id}: {title}")
+                        sent = True
+            except Exception as e:
+                logger.error(f"Failed to send Telegram message to {target_id}: {e}")
+                all_success = False
+
+    return all_success
 
 
 def run_scan(
