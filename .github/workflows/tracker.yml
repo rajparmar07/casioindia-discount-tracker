@@ -11,6 +11,8 @@ on:
         type: boolean
         default: false
         required: false
+  repository_dispatch:
+    types: [check-discounts, ping]
 
 # Ensure only one instance of the monitor runs at a time
 concurrency:
