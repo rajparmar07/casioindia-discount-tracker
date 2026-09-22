@@ -3316,5 +3316,40 @@
     "compare_at": 1295.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10817867972889_53185368817945": {
+    "title": "F-91WF-3ADF",
+    "price": 2195.0,
+    "compare_at": 2195.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928159199513_50750536646937": {
+    "title": "WS-1700H-1AV",
+    "price": 2995.0,
+    "compare_at": 2995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928142618905_50750486151449": {
+    "title": "LA-11WR-5A",
+    "price": 4895.0,
+    "compare_at": 4895.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928122302745_50750347477273": {
+    "title": "GM-2110D-2A",
+    "price": 21995.0,
+    "compare_at": 21995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928122532121_50750348263705": {
+    "title": "GM-2110D-4A",
+    "price": 15396.5,
+    "compare_at": 21995.0,
+    "discount_pct": 30.0,
+    "available": true
   }
 }
