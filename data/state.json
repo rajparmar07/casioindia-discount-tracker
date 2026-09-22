@@ -3435,5 +3435,26 @@
     "compare_at": 4495.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928165261593_50750547886361": {
+    "title": "AE-1600H-1AV",
+    "price": 3195.0,
+    "compare_at": 3195.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247996735769_51890784665881": {
+    "title": "F-91WG-9Q",
+    "price": 1195.0,
+    "compare_at": 1195.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928156250393_50750529437977": {
+    "title": "F-91WM-9A",
+    "price": 1395.0,
+    "compare_at": 1395.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
