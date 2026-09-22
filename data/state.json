@@ -3231,7 +3231,7 @@
     "price": 3295.0,
     "compare_at": 0.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928122368281_50750347542809": {
     "title": "GM-2110D-2B",
@@ -3454,6 +3454,13 @@
     "title": "F-91WM-9A",
     "price": 1395.0,
     "compare_at": 1395.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928113619225_50750284726553": {
+    "title": "GA-2100-7A7",
+    "price": 9195.0,
+    "compare_at": 9195.0,
     "discount_pct": 0.0,
     "available": true
   }
