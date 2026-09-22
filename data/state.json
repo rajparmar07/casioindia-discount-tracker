@@ -3379,5 +3379,40 @@
     "compare_at": 3995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928166506777_50750549754137": {
+    "title": "LTP-V007G-9B",
+    "price": 3695.0,
+    "compare_at": 3695.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10195474252057_51654720553241": {
+    "title": "EFB-730D-2B",
+    "price": 11995.0,
+    "compare_at": 11995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9936411230489_50800531931417": {
+    "title": "EFB-730D-7AV",
+    "price": 11995.0,
+    "compare_at": 11995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10195474317593_51654720618777": {
+    "title": "EFB-730L-7A",
+    "price": 11995.0,
+    "compare_at": 11995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10195474284825_51654720586009": {
+    "title": "EFB-730D-3A",
+    "price": 11995.0,
+    "compare_at": 11995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
