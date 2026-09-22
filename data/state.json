@@ -3477,5 +3477,19 @@
     "compare_at": 2795.0,
     "discount_pct": 50.0,
     "available": true
+  },
+  "10817860665625_53185360691481": {
+    "title": "F-91WF-2ADF",
+    "price": 2195.0,
+    "compare_at": 2195.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928166801689_50750550081817": {
+    "title": "LTP-V007SG-9E",
+    "price": 3695.0,
+    "compare_at": 3695.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
