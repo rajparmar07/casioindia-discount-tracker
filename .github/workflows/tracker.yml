@@ -46,6 +46,9 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           MIN_DISCOUNT_PERCENT: ${{ vars.MIN_DISCOUNT_PERCENT || '1.0' }}
+          NOTIFY_NEW_LISTINGS: ${{ vars.NOTIFY_NEW_LISTINGS || 'true' }}
+          NOTIFY_RESTOCKS: ${{ vars.NOTIFY_RESTOCKS || 'true' }}
+          NOTIFY_DISCOUNTS: ${{ vars.NOTIFY_DISCOUNTS || 'true' }}
         run: |
           EXTRA_FLAGS=""
           if [ "${{ inputs.reset_state }}" = "true" ]; then

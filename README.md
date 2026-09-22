@@ -1,116 +1,84 @@
-# ⌚ Casio India Real-Time Discount Tracker
+# ⌚ Casio India Real-Time Deals, Restocks & New Arrivals Tracker
 
 [![Casio Discount Monitor](https://github.com/rajparmar07/casioindia-discount-tracker/actions/workflows/tracker.yml/badge.svg)](https://github.com/rajparmar07/casioindia-discount-tracker/actions)
 
-A lightweight, automated alert bot that continuously monitors [Casio India (casiostore.bhawar.com)](https://casiostore.bhawar.com/collections/watches) for random price drops and discounts, sending instant notifications directly to your **Telegram** account with product photo, discount percentage, savings, and a direct 1-click buy link.
+A high-performance automated monitor that watches [Casio India (casiostore.bhawar.com)](https://casiostore.bhawar.com/collections/watches) 24/7 and sends instant, high-converting notification cards to your **Telegram Channel** with product photos, discount percentages, savings callouts, and 1-click buy buttons.
 
 ---
 
-## ✨ Features
-- **Real-Time Shopify API Feeds**: Directly queries Shopify's JSON endpoint (`/collections/watches/products.json`) without brittle HTML scraping or headless browsers.
-- **Instant Telegram Alerts**: Sends rich alerts containing:
-  - ⌚ Watch Name & Model
-  - 🏷️ Discount % (e.g., `30% OFF`, `50% OFF`)
-  - 💰 Deal Price vs MRP & Exact Savings (in ₹)
-  - 📦 In-Stock verification (filters out out-of-stock ghost sales)
-  - 🔗 Direct Buy Now button & watch image preview
-- **Duplicate Suppression**: Keeps a persistent state in `data/state.json` so you are never spammed with repeat alerts for the same deal.
-- **Smart Detection**: Detects:
-  - Brand-new discounts
-  - Further price reductions (e.g., drops from 20% to 40%)
-  - Restocks on already discounted watches
-- **Flexible Deployment**:
-  - **Local**: Run on your Windows/Mac/Linux PC.
-  - **24/7 Free Cloud**: Run seamlessly via **GitHub Actions** (included) or **Render / Koyeb**.
+## ⚡ Real-Time Alert Scenarios
+
+The bot automatically identifies and formats 5 distinct scenarios:
+
+| Scenario | Trigger Condition | Telegram Format |
+| :--- | :--- | :--- |
+| **✨ Fresh Drop / New Arrival** | Watch newly listed on Casio store catalog | *"✨ JUST DROPPED ON CASIO INDIA!"* + `🛍️ Grab New Arrival ➔` |
+| **🚨 Back in Stock** | Previously sold-out watch is now back in stock | *"🚨 BACK IN STOCK ALERT!"* + `⚡ Buy Before It Sells Out ➔` |
+| **🚨💥 Restocked on Sale** | Discounted watch returns to stock | *"🚨💥 RESTOCKED & ON SALE!"* + `🔥 Claim Deal Now ➔` |
+| **🚨🔥 New Discount** | Watch price slashed with a fresh discount | *"🚨🔥 DISCOUNT JUST DROPPED!"* + `🛒 Buy Now (Save ₹X) ➔` |
+| **⚡⚡ Price Drop** | Already discounted watch drops even lower | *"⚡⚡ PRICE DROP: EVEN CHEAPER!"* + `💥 Snatch Lowest Price ➔` |
 
 ---
 
 ## 🚀 Quick Start (Local Setup)
 
-### Step 1: Create your Telegram Bot (2 minutes)
-1. Open Telegram and search for [@BotFather](https://t.me/BotFather).
-2. Send `/newbot`, name your bot (e.g. `Casio Alert Bot`), and choose a username ending in `bot` (e.g. `my_casio_deals_bot`).
-3. Copy the **HTTP API Token** provided by BotFather.
-4. Next, search for [@userinfobot](https://t.me/userinfobot) on Telegram, click **Start**, and note your numeric **Id** (this is your `CHAT_ID`).
-5. Open your newly created bot in Telegram and click **Start** (important: bots cannot message you first until you start the conversation).
-
-### Step 2: Configure Environment
+### Step 1: Configure Environment
 Copy `.env.example` to `.env`:
 ```bash
 copy .env.example .env
 ```
-Open `.env` and fill in your details:
+Fill in your credentials:
 ```env
-TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
-TELEGRAM_CHAT_ID=987654321
-MIN_DISCOUNT_PERCENT=1
-CHECK_INTERVAL_SECONDS=120
+TELEGRAM_BOT_TOKEN=8895386525:AAG23va6eZ_wvZ-O2KlOm_R0QT8W4Et_fOc
+TELEGRAM_CHAT_ID=-1004370492757
+NOTIFY_NEW_LISTINGS=true
+NOTIFY_RESTOCKS=true
+NOTIFY_DISCOUNTS=true
 ```
 
-### Step 3: Install Requirements
+### Step 2: Install Requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Test Telegram Connection
+### Step 3: Preview the 5 Catchy Templates in Telegram
 ```bash
-python casio_tracker.py --test-telegram
+python casio_tracker.py --test-templates
 ```
-You should instantly receive a sample watch alert on your Telegram!
+This instantly sends a live preview of all 5 formatted cards directly into your Telegram channel!
 
-### Step 5: Run the Tracker
+### Step 4: Run the Tracker
 ```bash
-# Continuous 24/7 loop (checks every 120 seconds):
+# Run continuous loop locally:
 python casio_tracker.py
 
-# Or run a single scan and exit:
+# Or run single scan and exit:
 python casio_tracker.py --once
 
-# Or test without sending messages:
+# Or test without sending alerts:
 python casio_tracker.py --dry-run
 ```
 
 ---
 
-## ☁️ 24/7 Free Cloud Hosting with GitHub Actions
+## ☁️ 24/7 Automated Hosting (GitHub Actions & cron-job.org)
 
-You can host this 100% free on GitHub without keeping your computer on:
-
-1. **Push this project to a new GitHub repository**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of Casio discount tracker"
-   git branch -M main
-   git remote add origin https://github.com/rajparmar07/casioindia-discount-tracker.git
-   git push -u origin main
-   ```
-2. **Add Telegram Secrets to GitHub**:
-   - Go to your repository on GitHub.
-   - Click **Settings** $
-ightarrow$ **Secrets and variables** $
-ightarrow$ **Actions**.
-   - Click **New repository secret**:
-     - Name: `TELEGRAM_BOT_TOKEN`, Value: `<Your Telegram Bot Token>`
-     - Name: `TELEGRAM_CHAT_ID`, Value: `<Your Numeric Telegram Chat ID>`
-3. **Ensure Workflow Permissions**:
-   - In your repo: **Settings** $
-ightarrow$ **Actions** $
-ightarrow$ **General**.
-   - Under **Workflow permissions**, select **Read and write permissions** (this allows the bot to commit `data/state.json` back to prevent duplicate alerts).
-   - Click **Save**.
-4. **Done!** The workflow in `.github/workflows/tracker.yml` will automatically run every 10 minutes 24/7 and alert your Telegram instantly whenever a new discount drops.
+1. **GitHub Actions**: The workflow in `.github/workflows/tracker.yml` runs automatically in the background.
+2. **cron-job.org Trigger**: Triggers GitHub Actions on the exact minute without delay using the GitHub Workflow Dispatch API.
+3. **1-Click Reset in GitHub UI**:
+   - In the **Actions** tab $ightarrow$ **Casio Discount Monitor** $ightarrow$ **Run workflow**.
+   - Tick the checkbox: ☑️ **Reset state cache (re-send all currently active discount alerts)?** to clear state and re-broadcast current deals.
 
 ---
 
-## ⚙️ CLI Options Reference
+## ⚙️ CLI Reference
 
-| Argument | Description | Default |
+| Flag | Description | Default |
 | :--- | :--- | :--- |
-| `--once` | Run a single scan and exit | `False` (continuous) |
-| `--interval <sec>` | Seconds between checks in continuous mode | `120` |
-| `--min-discount <pct>` | Only alert if discount is at least this percentage | `1.0` |
-| `--dry-run` | Scan and display findings in console without sending alerts | `False` |
-| `--test-telegram` | Send a verification test alert to Telegram | - |
-| `--all-products` | Monitor the entire catalog (~1,350 items) instead of just watches (~470 items) | `False` |
-| `--reset-state` | Clear stored price history and start fresh | - |
+| `--once` | Run a single scan and exit | `False` |
+| `--test-templates` | Send all 5 catchy preview cards to Telegram | - |
+| `--dry-run` | Scan store and print findings without sending alerts | `False` |
+| `--min-discount <pct>` | Minimum discount percentage to trigger discount alerts | `1.0` |
+| `--all-products` | Scan all ~1,350 store products instead of ~470 watches | `False` |
+| `--reset-state` | Clear stored state database before running | - |
+| `--notify-all-new` | If state is empty, alert for all items instead of baseline seeding | `False` |

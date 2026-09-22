@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Casio India Real-Time Discount Tracker (Telegram Bot)
-Monitors casiostore.bhawar.com for discounts and instant price drops.
+Casio India Real-Time Deal, Restock & New Listing Tracker (Telegram Bot)
+Monitors casiostore.bhawar.com for new arrivals, inventory restocks, and price drops.
 """
 
 import os
@@ -12,7 +12,7 @@ import logging
 import argparse
 import urllib.request
 import urllib.parse
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 
 try:
     from dotenv import load_dotenv
@@ -98,23 +98,119 @@ def get_all_products(scan_all: bool = False) -> List[Dict[str, Any]]:
             break
         all_products.extend(products)
         page += 1
-        time.sleep(0.3)  # Polite request pacing
+        time.sleep(0.3)
 
     logger.info(f"Fetched {len(all_products)} products across {page - 1} pages.")
     return all_products
 
 
+def format_catchy_alert(
+    alert_type: str,
+    title: str,
+    price: float,
+    compare_at: float,
+    discount_pct: float,
+    savings: float,
+    url: str
+) -> Tuple[str, Dict[str, Any]]:
+    """Generate high-converting, catchy Telegram message cards with custom buttons for each scenario."""
+    
+    if alert_type == "NEW_LISTING":
+        caption = (
+            "✨ <b>JUST DROPPED ON CASIO INDIA!</b> ✨\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f"⌚ <b>{title}</b>\n\n"
+            "💎 <b>Fresh Drop Alert!</b> This model was just officially listed on the store!\n"
+            f"💰 <b>Price:</b> <b>₹{price:,.2f}</b>\n"
+            "📦 <b>Availability:</b> In Stock & Ready to Ship ✅\n\n"
+            "⚡ <i>Be among the very first to get your hands on this piece!</i>\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f'🔗 <a href="{url}">👉 <b>SNAG IT FIRST ON CASIO STORE</b></a>'
+        )
+        button_text = "🛍️ Grab New Arrival ➔"
+
+    elif alert_type == "RESTOCK_NORMAL":
+        caption = (
+            "🚨 <b>BACK IN STOCK ALERT!</b> 🚨\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f"⌚ <b>{title}</b>\n\n"
+            "👀 <b>Missed it earlier? It’s finally back!</b>\n"
+            f"💰 <b>Price:</b> <b>₹{price:,.2f}</b> (MRP)\n"
+            "📦 <b>Stock Status:</b> <b>RESTOCKED & READY TO SHIP!</b> 🟢\n\n"
+            "⏳ <i>Restocked watches on Casio Bhawar often sell out within hours. Act fast!</i>\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f'🔗 <a href="{url}">👉 <b>CLAIM YOURS BEFORE IT IS GONE</b></a>'
+        )
+        button_text = "⚡ Buy Before It Sells Out ➔"
+
+    elif alert_type == "RESTOCK_DISCOUNT":
+        caption = (
+            "🚨💥 <b>RESTOCKED & ON SALE!</b> 💥🚨\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f"⌚ <b>{title}</b>\n\n"
+            "🔥 <b>Double Win:</b> Back in stock with a heavy discount!\n\n"
+            f"🏷️ <b>Discount:</b> <b>💥 {discount_pct}% OFF!</b>\n"
+            f"💰 <b>Steal Deal:</b> <b>₹{price:,.2f}</b>  <s>₹{compare_at:,.2f}</s>\n"
+            f"💵 <b>You Pocket:</b> <b>₹{savings:,.2f} SAVED!</b>\n"
+            "📦 <b>Stock:</b> Verified In Stock ✅\n\n"
+            "🏃‍♂️💨 <i>Discounted restocks vanish almost instantly. Don't wait!</i>\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f'🔗 <a href="{url}">👉 <b>ORDER NOW AT DISCOUNTED PRICE</b></a>'
+        )
+        button_text = f"🔥 Claim Deal (Save ₹{savings:,.0f}) ➔"
+
+    elif alert_type == "PRICE_DROP":
+        caption = (
+            "⚡⚡ <b>PRICE DROP: EVEN CHEAPER!</b> ⚡⚡\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f"⌚ <b>{title}</b>\n\n"
+            "📉 <b>Casio just lowered the price AGAIN!</b>\n\n"
+            f"💰 <b>New Rock-Bottom:</b> <b>₹{price:,.2f}</b>  <s>₹{compare_at:,.2f}</s>\n"
+            f"🏷️ <b>Bigger Discount:</b> <b>💥 {discount_pct}% OFF!</b>\n"
+            f"💵 <b>Total Savings:</b> <b>₹{savings:,.2f} Saved!</b>\n"
+            "📦 <b>Stock:</b> In Stock ✅\n\n"
+            "🎯 <i>Absolute lowest recorded price on this model!</i>\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f'🔗 <a href="{url}">👉 <b>LOCK IN THE LOWEST PRICE NOW</b></a>'
+        )
+        button_text = "💥 Snatch Lowest Price ➔"
+
+    else:  # Default to NEW_DISCOUNT
+        caption = (
+            "🚨🔥 <b>DISCOUNT JUST DROPPED!</b> 🔥🚨\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f"⌚ <b>{title}</b>\n\n"
+            f"💥 <b>Price slashed by {discount_pct}% right now!</b>\n\n"
+            f"💰 <b>Deal Price:</b> <b>₹{price:,.2f}</b>  <s>₹{compare_at:,.2f}</s>\n"
+            f"🏷️ <b>Discount:</b> <b>{discount_pct}% OFF</b>\n"
+            f"💵 <b>Direct Savings:</b> <b>₹{savings:,.2f} OFF MRP!</b>\n"
+            "📦 <b>Stock:</b> In Stock & Shippable ✅\n\n"
+            "⚡ <i>Random Casio discounts don't last long. Snag it while active!</i>\n"
+            "━━━━━━━━━━━━━━━━━━━━━\n"
+            f'🔗 <a href="{url}">👉 <b>GRAB THIS DEAL BEFORE IT EXPIRES</b></a>'
+        )
+        button_text = f"🛒 Buy Now (Save ₹{savings:,.0f}) ➔"
+
+    reply_markup = {
+        "inline_keyboard": [
+            [{"text": button_text, "url": url}]
+        ]
+    }
+
+    return caption, reply_markup
+
+
 def send_telegram_alert(
     bot_token: str,
     chat_id: str,
+    alert_type: str,
     title: str,
     price: float,
     compare_at: float,
     discount_pct: float,
     savings: float,
     url: str,
-    image_url: Optional[str] = None,
-    alert_type: str = "NEW_DISCOUNT"
+    image_url: Optional[str] = None
 ) -> bool:
     """Send formatted rich notification to one or multiple Telegram chat/channel IDs."""
     if not bot_token or not chat_id:
@@ -125,33 +221,19 @@ def send_telegram_alert(
     if not targets:
         return False
 
-    if alert_type == "RESTOCK":
-        header = "🎉 <b>RESTOCKED ON DISCOUNT!</b>"
-    elif alert_type == "PRICE_DROP":
-        header = "⚡ <b>FURTHER PRICE DROP!</b>"
-    else:
-        header = "🔥 <b>NEW CASIO DISCOUNT!</b>"
-
-    caption = (
-        f"{header}\n\n"
-        f"⌚ <b>{title}</b>\n"
-        f"🏷 <b>Discount:</b> <b>{discount_pct}% OFF</b>\n"
-        f"💰 <b>Deal Price:</b> ₹{price:,.2f}  <s>₹{compare_at:,.2f}</s>\n"
-        f"💵 <b>You Save:</b> ₹{savings:,.2f}\n"
-        f"📦 <b>Stock:</b> In Stock ✅\n\n"
-        f'🔗 <a href="{url}">👉 View Watch on Casio Store</a>'
+    caption, reply_markup = format_catchy_alert(
+        alert_type=alert_type,
+        title=title,
+        price=price,
+        compare_at=compare_at,
+        discount_pct=discount_pct,
+        savings=savings,
+        url=url
     )
-
-    reply_markup = {
-        "inline_keyboard": [
-            [{"text": "🛒 Open Product Page", "url": url}]
-        ]
-    }
 
     all_success = True
     for target_id in targets:
         sent = False
-        # Try photo first if available
         if image_url:
             send_photo_url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
             payload = {
@@ -169,7 +251,7 @@ def send_telegram_alert(
                 )
                 with urllib.request.urlopen(req, timeout=15) as resp:
                     if resp.status == 200:
-                        logger.info(f"Telegram photo alert sent to {target_id}: {title}")
+                        logger.info(f"Telegram photo alert sent to {target_id} [{alert_type}]: {title}")
                         sent = True
             except Exception as e:
                 logger.warning(f"Failed to send photo to {target_id} ({e}), trying text message...")
@@ -191,7 +273,7 @@ def send_telegram_alert(
                 )
                 with urllib.request.urlopen(req, timeout=15) as resp:
                     if resp.status == 200:
-                        logger.info(f"Telegram text alert sent to {target_id}: {title}")
+                        logger.info(f"Telegram text alert sent to {target_id} [{alert_type}]: {title}")
                         sent = True
             except Exception as e:
                 logger.error(f"Failed to send Telegram message to {target_id}: {e}")
@@ -206,12 +288,24 @@ def run_scan(
     state_file: str,
     min_discount: float,
     scan_all: bool,
+    notify_new_listings: bool = True,
+    notify_restocks: bool = True,
+    notify_discounts: bool = True,
+    notify_all_new: bool = False,
     dry_run: bool = False
 ) -> int:
+    """Scan product catalog and trigger catchy alerts for new listings, restocks, and price drops."""
     state = load_state(state_file)
     products = get_all_products(scan_all=scan_all)
     alerts_triggered = 0
     state_changed = False
+
+    is_baseline_seed = len(state) == 0 and not notify_all_new
+    if is_baseline_seed:
+        logger.info(
+            f"State database is empty. Performing silent baseline initialization for {len(products)} products "
+            "(preventing initial spam). Future scans will trigger alerts on new arrivals, restocks & discounts."
+        )
 
     for product in products:
         handle = product.get("handle", "")
@@ -227,7 +321,7 @@ def run_scan(
 
             try:
                 price = float(variant.get("price") or 0)
-                compare_at = float(variant.get("compare_at_price") or 0)
+                compare_at = float(variant.get("compare_at_price") or price)
             except (ValueError, TypeError):
                 continue
 
@@ -236,54 +330,80 @@ def run_scan(
             savings = round(compare_at - price, 2) if has_discount else 0.0
 
             prev_record = state.get(key)
-
-            # Check if this item is completely identical to stored state
-            if prev_record:
-                if (prev_record.get("price") == price and
-                    prev_record.get("compare_at") == compare_at and
-                    prev_record.get("available") == is_available and
-                    prev_record.get("discount_pct") == discount_pct):
-                    # Zero change, skip modifying state
-                    continue
-
-            # If we reached here, price, availability, or discount actually changed
-            state_changed = True
-
             trigger_alert = False
-            alert_type = "NEW_DISCOUNT"
+            alert_type = None
 
-            if has_discount and discount_pct >= min_discount:
-                if not prev_record:
-                    if is_available:
-                        trigger_alert = True
-                        alert_type = "NEW_DISCOUNT"
-                else:
-                    prev_price = prev_record.get("price", price)
-                    prev_discount = prev_record.get("discount_pct", 0)
-                    prev_available = prev_record.get("available", False)
+            # -------------------------------------------------------------
+            # CASE 1: Brand New Listing (never seen in state)
+            # -------------------------------------------------------------
+            if prev_record is None:
+                state_changed = True
+                state[key] = {
+                    "title": product_title,
+                    "price": price,
+                    "compare_at": compare_at,
+                    "discount_pct": discount_pct,
+                    "available": is_available
+                }
 
-                    if price < prev_price and is_available:
-                        trigger_alert = True
-                        alert_type = "PRICE_DROP"
-                    elif is_available and not prev_available and prev_discount > 0:
-                        trigger_alert = True
-                        alert_type = "RESTOCK"
-                    elif is_available and prev_discount == 0:
-                        trigger_alert = True
-                        alert_type = "NEW_DISCOUNT"
+                if not is_baseline_seed and is_available and notify_new_listings:
+                    trigger_alert = True
+                    alert_type = "NEW_LISTING"
 
-            state[key] = {
-                "title": product_title,
-                "price": price,
-                "compare_at": compare_at,
-                "discount_pct": discount_pct,
-                "available": is_available
-            }
+            # -------------------------------------------------------------
+            # CASE 2: Existing Product Check
+            # -------------------------------------------------------------
+            else:
+                prev_price = prev_record.get("price", price)
+                prev_compare_at = prev_record.get("compare_at", compare_at)
+                prev_available = prev_record.get("available", False)
+                prev_discount = prev_record.get("discount_pct", 0.0)
 
-            if trigger_alert:
+                # Has anything materially changed?
+                has_changed = (
+                    prev_price != price or
+                    prev_compare_at != compare_at or
+                    prev_available != is_available or
+                    prev_discount != discount_pct
+                )
+
+                if has_changed:
+                    state_changed = True
+
+                    # Event A: Back in Stock!
+                    if is_available and not prev_available:
+                        if has_discount and notify_discounts:
+                            trigger_alert = True
+                            alert_type = "RESTOCK_DISCOUNT"
+                        elif notify_restocks:
+                            trigger_alert = True
+                            alert_type = "RESTOCK_NORMAL"
+
+                    # Event B: New Discount applied to previously full-price item
+                    elif is_available and has_discount and prev_discount == 0.0 and discount_pct >= min_discount:
+                        if notify_discounts:
+                            trigger_alert = True
+                            alert_type = "NEW_DISCOUNT"
+
+                    # Event C: Further Price Drop on an already discounted item
+                    elif is_available and has_discount and price < prev_price and discount_pct >= min_discount:
+                        if notify_discounts:
+                            trigger_alert = True
+                            alert_type = "PRICE_DROP"
+
+                    state[key] = {
+                        "title": product_title,
+                        "price": price,
+                        "compare_at": compare_at,
+                        "discount_pct": discount_pct,
+                        "available": is_available
+                    }
+
+            if trigger_alert and alert_type:
                 alerts_triggered += 1
                 logger.info(
-                    f"[{alert_type}] {product_title} | ₹{price:,.2f} ({discount_pct}% OFF, MRP ₹{compare_at:,.2f})"
+                    f"[{alert_type}] {product_title} | ₹{price:,.2f} "
+                    f"({f'{discount_pct}% OFF' if discount_pct > 0 else 'Full Price'})"
                 )
                 if dry_run:
                     logger.info("  -> [DRY-RUN] Telegram alert skipped.")
@@ -291,14 +411,14 @@ def run_scan(
                     send_telegram_alert(
                         bot_token=bot_token,
                         chat_id=chat_id,
+                        alert_type=alert_type,
                         title=product_title,
                         price=price,
                         compare_at=compare_at,
                         discount_pct=discount_pct,
                         savings=savings,
                         url=product_url,
-                        image_url=image_url,
-                        alert_type=alert_type
+                        image_url=image_url
                     )
                     time.sleep(1.0)
 
@@ -306,44 +426,100 @@ def run_scan(
         save_state(state_file, state)
         logger.info(f"State saved ({len(state)} variants tracked). Alerts sent: {alerts_triggered}")
     elif not dry_run:
-        logger.info("No price or stock changes detected. State file unchanged.")
+        logger.info("No price, stock, or catalog changes detected. State file unchanged.")
     else:
         logger.info(f"Dry run complete. Potential alerts detected: {alerts_triggered}")
 
     return alerts_triggered
 
 
-def test_telegram_connection(bot_token: str, chat_id: str) -> None:
-    """Send a sample test notification to verify Telegram setup."""
-    logger.info("Sending test alert to Telegram...")
-    success = send_telegram_alert(
-        bot_token=bot_token,
-        chat_id=chat_id,
-        title="Casio G-Shock Test Watch (GA-B2100)",
-        price=7995.0,
-        compare_at=11995.0,
-        discount_pct=33.3,
-        savings=4000.0,
-        url=f"{BASE_URL}/collections/watches",
-        image_url="https://cdn.shopify.com/s/files/1/0910/0073/3977/files/GA-2100RL-1A.png",
-        alert_type="NEW_DISCOUNT"
-    )
-    if success:
-        logger.info("Test alert successfully delivered! Your Telegram bot is active and working.")
-    else:
-        logger.error("Failed to send test alert. Please verify your TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID.")
+def test_scenario_templates(bot_token: str, chat_id: str) -> None:
+    """Send preview cards for all 5 catchy scenarios directly to Telegram."""
+    logger.info("Sending preview cards for all 5 catchy scenarios to Telegram...")
+    test_cases = [
+        (
+            "NEW_LISTING",
+            "Casio G-Shock GA-B2100CD-1A Carbon Core Guard",
+            11995.0,
+            11995.0,
+            0.0,
+            0.0,
+            "https://casiostore.bhawar.com/collections/watches",
+            "https://cdn.shopify.com/s/files/1/0910/0073/3977/files/GA-2100RL-1A.png"
+        ),
+        (
+            "RESTOCK_NORMAL",
+            "Casio Vintage A168WEM-1D Silver Digital Classic",
+            2695.0,
+            2695.0,
+            0.0,
+            0.0,
+            "https://casiostore.bhawar.com/collections/watches",
+            "https://cdn.shopify.com/s/files/1/0910/0073/3977/files/GA-2100RL-1A.png"
+        ),
+        (
+            "RESTOCK_DISCOUNT",
+            "G-Shock GM-2110D-3A Metal Octagon Bezel Green Dial",
+            15396.50,
+            21995.0,
+            30.0,
+            6598.50,
+            "https://casiostore.bhawar.com/collections/watches",
+            "https://cdn.shopify.com/s/files/1/0910/0073/3977/files/GA-2100RL-1A.png"
+        ),
+        (
+            "NEW_DISCOUNT",
+            "Casio G-Shock GMA-P2110SC-4A Compact Octagon",
+            6646.50,
+            9495.0,
+            30.0,
+            2848.50,
+            "https://casiostore.bhawar.com/collections/watches",
+            "https://cdn.shopify.com/s/files/1/0910/0073/3977/files/GA-2100RL-1A.png"
+        ),
+        (
+            "PRICE_DROP",
+            "Casio Enticer LTP-SN5YL-3A Gold Tone Women's Watch",
+            1647.50,
+            3295.0,
+            50.0,
+            1647.50,
+            "https://casiostore.bhawar.com/collections/watches",
+            "https://cdn.shopify.com/s/files/1/0910/0073/3977/files/GA-2100RL-1A.png"
+        )
+    ]
+
+    for alert_type, title, price, compare_at, discount_pct, savings, url, image_url in test_cases:
+        logger.info(f"Sending sample card for: {alert_type}...")
+        send_telegram_alert(
+            bot_token=bot_token,
+            chat_id=chat_id,
+            alert_type=alert_type,
+            title=title,
+            price=price,
+            compare_at=compare_at,
+            discount_pct=discount_pct,
+            savings=savings,
+            url=url,
+            image_url=image_url
+        )
+        time.sleep(1.2)
+
+    logger.info("All 5 preview template cards successfully delivered to Telegram!")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Real-Time Casio India Discount Alert Bot")
+    parser = argparse.ArgumentParser(description="Real-Time Casio India Discount, Restock & New Listing Alert Bot")
     parser.add_argument("--once", action="store_true", help="Run a single scan and exit (for GitHub Actions / Cron)")
     parser.add_argument("--interval", type=int, default=None, help="Polling interval in seconds (default: from .env or 120)")
     parser.add_argument("--min-discount", type=float, default=None, help="Minimum discount percentage to trigger alert (e.g. 10 for 10 percent)")
     parser.add_argument("--dry-run", action="store_true", help="Scan without sending Telegram notifications or updating state")
-    parser.add_argument("--test-telegram", action="store_true", help="Send a test message to Telegram and exit")
+    parser.add_argument("--test-templates", action="store_true", help="Send preview cards of all 5 catchy scenarios to Telegram and exit")
+    parser.add_argument("--test-telegram", action="store_true", help="Send a single test message to Telegram and exit")
     parser.add_argument("--all-products", action="store_true", help="Scan all store products instead of just /collections/watches")
     parser.add_argument("--state-file", type=str, default=DEFAULT_STATE_FILE, help="Path to state.json")
     parser.add_argument("--reset-state", action="store_true", help="Clear stored state file before running")
+    parser.add_argument("--notify-all-new", action="store_true", help="If state is empty, alert for every single item instead of baseline seeding")
 
     args = parser.parse_args()
 
@@ -359,6 +535,10 @@ def main():
 
     scan_all = args.all_products or os.getenv("SCAN_ALL_PRODUCTS", "false").lower() == "true"
 
+    notify_new_listings = os.getenv("NOTIFY_NEW_LISTINGS", "true").lower() == "true"
+    notify_restocks = os.getenv("NOTIFY_RESTOCKS", "true").lower() == "true"
+    notify_discounts = os.getenv("NOTIFY_DISCOUNTS", "true").lower() == "true"
+
     interval = args.interval
     if interval is None:
         try:
@@ -370,11 +550,14 @@ def main():
         os.remove(args.state_file)
         logger.info(f"Reset state file: {args.state_file}")
 
-    if args.test_telegram:
+    if args.test_templates or args.test_telegram:
         if not bot_token or not chat_id:
             logger.error("Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID in environment or .env file.")
             sys.exit(1)
-        test_telegram_connection(bot_token, chat_id)
+        if args.test_templates:
+            test_scenario_templates(bot_token, chat_id)
+        else:
+            test_scenario_templates(bot_token, chat_id)
         return
 
     if not args.dry_run and (not bot_token or not chat_id):
@@ -387,19 +570,44 @@ def main():
     mode_name = "Single Run (--once)" if args.once else f"Continuous Loop (Every {interval}s)"
     scope_name = "All Store Products" if scan_all else "Watches Collection"
     logger.info("=" * 60)
-    logger.info("Casio India Watch Discount Tracker")
+    logger.info("Casio India Tracker: Deals, Restocks & New Arrivals")
     logger.info(f"Scope: {scope_name}")
     logger.info(f"Min Discount Threshold: {min_discount}%")
+    logger.info(f"Notify New Listings: {notify_new_listings}")
+    logger.info(f"Notify Restocks: {notify_restocks}")
+    logger.info(f"Notify Discounts: {notify_discounts}")
     logger.info(f"Mode: {mode_name}")
     logger.info(f"Dry Run: {args.dry_run}")
     logger.info("=" * 60)
 
     if args.once:
-        run_scan(bot_token, chat_id, args.state_file, min_discount, scan_all, dry_run=args.dry_run)
+        run_scan(
+            bot_token=bot_token,
+            chat_id=chat_id,
+            state_file=args.state_file,
+            min_discount=min_discount,
+            scan_all=scan_all,
+            notify_new_listings=notify_new_listings,
+            notify_restocks=notify_restocks,
+            notify_discounts=notify_discounts,
+            notify_all_new=args.notify_all_new,
+            dry_run=args.dry_run
+        )
     else:
         while True:
             try:
-                run_scan(bot_token, chat_id, args.state_file, min_discount, scan_all, dry_run=args.dry_run)
+                run_scan(
+                    bot_token=bot_token,
+                    chat_id=chat_id,
+                    state_file=args.state_file,
+                    min_discount=min_discount,
+                    scan_all=scan_all,
+                    notify_new_listings=notify_new_listings,
+                    notify_restocks=notify_restocks,
+                    notify_discounts=notify_discounts,
+                    notify_all_new=args.notify_all_new,
+                    dry_run=args.dry_run
+                )
             except Exception as e:
                 logger.error(f"Unexpected error during scan: {e}", exc_info=True)
             logger.info(f"Sleeping for {interval} seconds until next check...")
