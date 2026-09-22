@@ -3351,5 +3351,33 @@
     "compare_at": 21995.0,
     "discount_pct": 30.0,
     "available": true
+  },
+  "9928161165593_50750541267225": {
+    "title": "LTP-E154MPG-4A",
+    "price": 7995.0,
+    "compare_at": 7995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928146321689_50750494343449": {
+    "title": "MTP-B145D-2A2V",
+    "price": 6995.0,
+    "compare_at": 6995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9936414114073_50800542646553": {
+    "title": "F-94WA-9",
+    "price": 1495.0,
+    "compare_at": 1495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928154644761_50750520164633": {
+    "title": "AEQ-120W-1AV",
+    "price": 3995.0,
+    "compare_at": 3995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
