@@ -3414,5 +3414,19 @@
     "compare_at": 11995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10293141569817_52084356546841": {
+    "title": "EFR-575D-4A",
+    "price": 8995.0,
+    "compare_at": 8995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9996114886937_51123910344985": {
+    "title": "EFR-575D-2A",
+    "price": 8995.0,
+    "compare_at": 8995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
