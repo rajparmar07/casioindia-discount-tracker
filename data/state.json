@@ -3498,5 +3498,19 @@
     "compare_at": 2495.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928155496729_50750523474201": {
+    "title": "F-91W-3",
+    "price": 1295.0,
+    "compare_at": 1295.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10817688764697_53184694976793": {
+    "title": "EFS-S660D-1ADF",
+    "price": 16995.0,
+    "compare_at": 16995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
