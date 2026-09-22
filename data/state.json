@@ -3463,5 +3463,19 @@
     "compare_at": 9195.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928145305881_50750493098265": {
+    "title": "MTP-1314L-8AV",
+    "price": 1647.5,
+    "compare_at": 3295.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928160444697_50750539333913": {
+    "title": "LTP-1241D-4A",
+    "price": 1397.5,
+    "compare_at": 2795.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
