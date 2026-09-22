@@ -3288,5 +3288,26 @@
     "compare_at": 6995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10619830403353_52379054801177": {
+    "title": "AQ-240E-2A",
+    "price": 4995.0,
+    "compare_at": 4995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10619830501657_52379054965017": {
+    "title": "AQ-240E-7A2",
+    "price": 4995.0,
+    "compare_at": 4995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10195474448665_51654720749849": {
+    "title": "AQ-240E-3A",
+    "price": 4995.0,
+    "compare_at": 4995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
