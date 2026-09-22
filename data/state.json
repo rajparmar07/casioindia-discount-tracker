@@ -3512,5 +3512,12 @@
     "compare_at": 16995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10011115716889_51199084888345": {
+    "title": "W-218H-3BV",
+    "price": 947.5,
+    "compare_at": 1895.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
