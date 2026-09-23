@@ -3547,5 +3547,12 @@
     "compare_at": 3695.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928148910361_50750499094809": {
+    "title": "MTP-VD03D-3A1",
+    "price": 1897.5,
+    "compare_at": 3795.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
