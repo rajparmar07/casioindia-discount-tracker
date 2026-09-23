@@ -3266,14 +3266,14 @@
     "price": 25995.0,
     "compare_at": 25995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10679752950041_52739160473881": {
     "title": "GM-2100LXB-1A9",
     "price": 17995.0,
     "compare_at": 17995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9936411296025_50800532160793": {
     "title": "EFR-526L-1AV",
