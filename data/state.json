@@ -3533,5 +3533,19 @@
     "compare_at": 6995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928168964377_50750553194777": {
+    "title": "MTP-VT04L-8E",
+    "price": 3495.0,
+    "compare_at": 3495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928160117017_50750538416409": {
+    "title": "LTP-1234DD-4A",
+    "price": 3695.0,
+    "compare_at": 3695.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
