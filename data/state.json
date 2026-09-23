@@ -3561,5 +3561,19 @@
     "compare_at": 7995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9936413983001_50800542089497": {
+    "title": "EFV-640L-2AV",
+    "price": 5397.0,
+    "compare_at": 8995.0,
+    "discount_pct": 40.0,
+    "available": true
+  },
+  "10175297814809_51572640219417": {
+    "title": "EFV-160D-3A",
+    "price": 5097.0,
+    "compare_at": 8495.0,
+    "discount_pct": 40.0,
+    "available": true
   }
 }
