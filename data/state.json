@@ -3574,6 +3574,6 @@
     "price": 5097.0,
     "compare_at": 8495.0,
     "discount_pct": 40.0,
-    "available": true
+    "available": false
   }
 }
