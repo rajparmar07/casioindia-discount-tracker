@@ -113,51 +113,64 @@ def format_catchy_alert(
     savings: float,
     url: str
 ) -> Tuple[str, Dict[str, Any]]:
-    """Generate high-converting, catchy Telegram message cards with custom buttons for each scenario."""
-    
+    """Generate high-converting, catchy Telegram message cards with custom buttons for each scenario.
+    Always includes discount percentage, deal price vs MRP, and savings for ANY scenario if a discount exists.
+    """
+    has_discount = discount_pct > 0 and compare_at > price and savings > 0
+
+    # Build the pricing block dynamically based on whether discount exists
+    if has_discount:
+        price_block = (
+            f"🏷️ <b>Discount:</b> <b>💥 {discount_pct}% OFF!</b>\n"
+            f"💰 <b>Deal Price:</b> <b>₹{price:,.2f}</b>  <s>₹{compare_at:,.2f}</s>\n"
+            f"💵 <b>You Save:</b> <b>₹{savings:,.2f} OFF MRP!</b>"
+        )
+    else:
+        price_block = f"💰 <b>Price:</b> <b>₹{price:,.2f}</b> (MRP)"
+
     if alert_type == "NEW_LISTING":
+        if has_discount:
+            header = f"✨ <b>JUST DROPPED WITH {discount_pct}% OFF!</b> ✨"
+            subtitle = f"💎 <b>Fresh Drop Deal!</b> Newly listed on the store with an instant <b>{discount_pct}% discount</b>!"
+            button_text = f"🛍️ Grab Deal ({discount_pct}% OFF) ➔"
+        else:
+            header = "✨ <b>JUST DROPPED ON CASIO INDIA!</b> ✨"
+            subtitle = "💎 <b>Fresh Drop Alert!</b> This model was just officially listed on the store!"
+            button_text = "🛍️ Grab New Arrival ➔"
+
         caption = (
-            "✨ <b>JUST DROPPED ON CASIO INDIA!</b> ✨\n"
+            f"{header}\n"
             "━━━━━━━━━━━━━━━━━━━━━\n"
             f"⌚ <b>{title}</b>\n\n"
-            "💎 <b>Fresh Drop Alert!</b> This model was just officially listed on the store!\n"
-            f"💰 <b>Price:</b> <b>₹{price:,.2f}</b>\n"
+            f"{subtitle}\n\n"
+            f"{price_block}\n"
             "📦 <b>Availability:</b> In Stock & Ready to Ship ✅\n\n"
             "⚡ <i>Be among the very first to get your hands on this piece!</i>\n"
             "━━━━━━━━━━━━━━━━━━━━━\n"
             f'🔗 <a href="{url}">👉 <b>SNAG IT FIRST ON CASIO STORE</b></a>'
         )
-        button_text = "🛍️ Grab New Arrival ➔"
 
-    elif alert_type == "RESTOCK_NORMAL":
+    elif alert_type in ("RESTOCK_NORMAL", "RESTOCK_DISCOUNT"):
+        if has_discount:
+            header = "🚨💥 <b>RESTOCKED & ON SALE!</b> 💥🚨"
+            subtitle = "🔥 <b>Double Win:</b> Back in stock with a heavy discount!"
+            button_text = f"🔥 Claim Deal (Save ₹{savings:,.0f}) ➔"
+        else:
+            header = "🚨 <b>BACK IN STOCK ALERT!</b> 🚨"
+            subtitle = "👀 <b>Missed it earlier? It’s finally back!</b>"
+            button_text = "⚡ Buy Before It Sells Out ➔"
+
         caption = (
-            "🚨 <b>BACK IN STOCK ALERT!</b> 🚨\n"
+            f"{header}\n"
             "━━━━━━━━━━━━━━━━━━━━━\n"
             f"⌚ <b>{title}</b>\n\n"
-            "👀 <b>Missed it earlier? It’s finally back!</b>\n"
-            f"💰 <b>Price:</b> <b>₹{price:,.2f}</b> (MRP)\n"
+            f"{subtitle}\n\n"
+            f"{price_block}\n"
             "📦 <b>Stock Status:</b> <b>RESTOCKED & READY TO SHIP!</b> 🟢\n\n"
             "⏳ <i>Restocked watches on Casio Bhawar often sell out within hours. Act fast!</i>\n"
             "━━━━━━━━━━━━━━━━━━━━━\n"
             f'🔗 <a href="{url}">👉 <b>CLAIM YOURS BEFORE IT IS GONE</b></a>'
         )
-        button_text = "⚡ Buy Before It Sells Out ➔"
-
-    elif alert_type == "RESTOCK_DISCOUNT":
-        caption = (
-            "🚨💥 <b>RESTOCKED & ON SALE!</b> 💥🚨\n"
-            "━━━━━━━━━━━━━━━━━━━━━\n"
-            f"⌚ <b>{title}</b>\n\n"
-            "🔥 <b>Double Win:</b> Back in stock with a heavy discount!\n\n"
-            f"🏷️ <b>Discount:</b> <b>💥 {discount_pct}% OFF!</b>\n"
-            f"💰 <b>Steal Deal:</b> <b>₹{price:,.2f}</b>  <s>₹{compare_at:,.2f}</s>\n"
-            f"💵 <b>You Pocket:</b> <b>₹{savings:,.2f} SAVED!</b>\n"
-            "📦 <b>Stock:</b> Verified In Stock ✅\n\n"
-            "🏃‍♂️💨 <i>Discounted restocks vanish almost instantly. Don't wait!</i>\n"
-            "━━━━━━━━━━━━━━━━━━━━━\n"
-            f'🔗 <a href="{url}">👉 <b>ORDER NOW AT DISCOUNTED PRICE</b></a>'
-        )
-        button_text = f"🔥 Claim Deal (Save ₹{savings:,.0f}) ➔"
 
     elif alert_type == "PRICE_DROP":
         caption = (
@@ -165,25 +178,21 @@ def format_catchy_alert(
             "━━━━━━━━━━━━━━━━━━━━━\n"
             f"⌚ <b>{title}</b>\n\n"
             "📉 <b>Casio just lowered the price AGAIN!</b>\n\n"
-            f"💰 <b>New Rock-Bottom:</b> <b>₹{price:,.2f}</b>  <s>₹{compare_at:,.2f}</s>\n"
-            f"🏷️ <b>Bigger Discount:</b> <b>💥 {discount_pct}% OFF!</b>\n"
-            f"💵 <b>Total Savings:</b> <b>₹{savings:,.2f} Saved!</b>\n"
+            f"{price_block}\n"
             "📦 <b>Stock:</b> In Stock ✅\n\n"
             "🎯 <i>Absolute lowest recorded price on this model!</i>\n"
             "━━━━━━━━━━━━━━━━━━━━━\n"
             f'🔗 <a href="{url}">👉 <b>LOCK IN THE LOWEST PRICE NOW</b></a>'
         )
-        button_text = "💥 Snatch Lowest Price ➔"
+        button_text = f"💥 Snatch Lowest Price ({discount_pct}% OFF) ➔" if has_discount else "💥 View Price Drop ➔"
 
-    else:  # Default to NEW_DISCOUNT
+    else:  # Default / NEW_DISCOUNT
         caption = (
             "🚨🔥 <b>DISCOUNT JUST DROPPED!</b> 🔥🚨\n"
             "━━━━━━━━━━━━━━━━━━━━━\n"
             f"⌚ <b>{title}</b>\n\n"
             f"💥 <b>Price slashed by {discount_pct}% right now!</b>\n\n"
-            f"💰 <b>Deal Price:</b> <b>₹{price:,.2f}</b>  <s>₹{compare_at:,.2f}</s>\n"
-            f"🏷️ <b>Discount:</b> <b>{discount_pct}% OFF</b>\n"
-            f"💵 <b>Direct Savings:</b> <b>₹{savings:,.2f} OFF MRP!</b>\n"
+            f"{price_block}\n"
             "📦 <b>Stock:</b> In Stock & Shippable ✅\n\n"
             "⚡ <i>Random Casio discounts don't last long. Snag it while active!</i>\n"
             "━━━━━━━━━━━━━━━━━━━━━\n"
