@@ -3589,5 +3589,19 @@
     "compare_at": 5495.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10817827111193_53185305968921": {
+    "title": "MTP-E740-3AVDF",
+    "price": 6995.0,
+    "compare_at": 6995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9936410444057_50800528523545": {
+    "title": "AQ-230A-1D",
+    "price": 2395.0,
+    "compare_at": 2395.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
