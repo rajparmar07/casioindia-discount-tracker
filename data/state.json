@@ -3575,5 +3575,19 @@
     "compare_at": 8495.0,
     "discount_pct": 40.0,
     "available": false
+  },
+  "10619830698265_52379055161625": {
+    "title": "AQ-230A-7AMQY",
+    "price": 3495.0,
+    "compare_at": 3495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928132985113_50750391681305": {
+    "title": "GMD-S5600BA-1",
+    "price": 5495.0,
+    "compare_at": 5495.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
