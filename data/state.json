@@ -3617,5 +3617,19 @@
     "compare_at": 2995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928155234585_50750522229017": {
+    "title": "F-200W-9A",
+    "price": 1695.0,
+    "compare_at": 1695.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928168702233_50750552572185": {
+    "title": "MTP-VT03BL-7B",
+    "price": 3495.0,
+    "compare_at": 3495.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
