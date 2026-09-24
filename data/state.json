@@ -3603,5 +3603,12 @@
     "compare_at": 2395.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10679753277721_52739164078361": {
+    "title": "MTP-VT06L-1B",
+    "price": 4495.0,
+    "compare_at": 4495.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
