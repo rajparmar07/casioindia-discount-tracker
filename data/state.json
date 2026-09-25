@@ -3694,5 +3694,12 @@
     "compare_at": 3295.0,
     "discount_pct": 50.0,
     "available": true
+  },
+  "10810164347161_53160113373465": {
+    "title": "LTP-B171L-7A1DF",
+    "price": 5495.0,
+    "compare_at": 5495.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
