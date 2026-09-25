@@ -3715,5 +3715,19 @@
     "compare_at": 2795.0,
     "discount_pct": 50.0,
     "available": true
+  },
+  "10025410101529_51261498720537": {
+    "title": "DW-5040RX-7",
+    "price": 18995.0,
+    "compare_at": 18995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247996965145_51890784895257": {
+    "title": "MQ-24-7B2L",
+    "price": 1195.0,
+    "compare_at": 1195.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
