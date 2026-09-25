@@ -3673,5 +3673,12 @@
     "compare_at": 7995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10662775423257_52515049341209": {
+    "title": "MQ-24DA-1A",
+    "price": 2995.0,
+    "compare_at": 2995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
