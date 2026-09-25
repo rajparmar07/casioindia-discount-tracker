@@ -3680,5 +3680,12 @@
     "compare_at": 2995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928160149785_50750538449177": {
+    "title": "LTP-1234DD-5A",
+    "price": 1847.5,
+    "compare_at": 3695.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
