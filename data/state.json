@@ -3659,5 +3659,12 @@
     "compare_at": 3595.0,
     "discount_pct": 50.0,
     "available": true
+  },
+  "9928167358745_50750550802713": {
+    "title": "LTP-VT03D-1B",
+    "price": 1847.5,
+    "compare_at": 3695.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
