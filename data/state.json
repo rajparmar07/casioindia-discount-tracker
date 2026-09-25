@@ -3701,5 +3701,19 @@
     "compare_at": 5495.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928167555353_50750550999321": {
+    "title": "LTP-VT04D-4A",
+    "price": 3695.0,
+    "compare_at": 3695.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928144814361_50750492475673": {
+    "title": "MTP-1183E-7A",
+    "price": 1397.5,
+    "compare_at": 2795.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
