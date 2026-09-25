@@ -3392,7 +3392,7 @@
     "price": 11995.0,
     "compare_at": 11995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9936411230489_50800531931417": {
     "title": "EFB-730D-7AV",
@@ -3406,7 +3406,7 @@
     "price": 11995.0,
     "compare_at": 11995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10195474284825_51654720586009": {
     "title": "EFB-730D-3A",
