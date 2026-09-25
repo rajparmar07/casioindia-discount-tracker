@@ -3645,5 +3645,19 @@
     "compare_at": 2995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9996120686873_51123926597913": {
+    "title": "LTP-SN5YRL-2A",
+    "price": 1797.5,
+    "compare_at": 3595.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9996118917401_51123922927897": {
+    "title": "LTP-SN5YD-2A",
+    "price": 1797.5,
+    "compare_at": 3595.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
