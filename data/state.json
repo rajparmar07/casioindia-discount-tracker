@@ -3630,7 +3630,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928150614297_50750501486873": {
     "title": "MTP-VT01LM-7A",
