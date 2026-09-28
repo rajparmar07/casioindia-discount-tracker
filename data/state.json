@@ -4016,5 +4016,12 @@
     "compare_at": 3995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928166703385_50750549950745": {
+    "title": "LTP-V007L-9B",
+    "price": 2495.0,
+    "compare_at": 2495.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
