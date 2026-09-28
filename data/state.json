@@ -3504,7 +3504,7 @@
     "price": 1295.0,
     "compare_at": 1295.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10817688764697_53184694976793": {
     "title": "EFS-S660D-1ADF",
@@ -3980,7 +3980,7 @@
     "price": 2195.0,
     "compare_at": 2195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928142782745_50750486544665": {
     "title": "LA670WA-1",
