@@ -3266,14 +3266,14 @@
     "price": 25995.0,
     "compare_at": 25995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10679752950041_52739160473881": {
     "title": "GM-2100LXB-1A9",
     "price": 17995.0,
     "compare_at": 17995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9936411296025_50800532160793": {
     "title": "EFR-526L-1AV",
@@ -3392,7 +3392,7 @@
     "price": 11995.0,
     "compare_at": 11995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9936411230489_50800531931417": {
     "title": "EFB-730D-7AV",
@@ -3406,7 +3406,7 @@
     "price": 11995.0,
     "compare_at": 11995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10195474284825_51654720586009": {
     "title": "EFB-730D-3A",
@@ -3700,7 +3700,7 @@
     "price": 5495.0,
     "compare_at": 5495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928167555353_50750550999321": {
     "title": "LTP-VT04D-4A",
