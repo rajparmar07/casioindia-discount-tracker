@@ -3988,5 +3988,12 @@
     "compare_at": 2995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9936413425945_50800540123417": {
+    "title": "EFV-150CL-2AV",
+    "price": 5997.0,
+    "compare_at": 9995.0,
+    "discount_pct": 40.0,
+    "available": true
   }
 }
