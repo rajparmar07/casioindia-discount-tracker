@@ -3960,5 +3960,19 @@
     "compare_at": 5995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10195474579737_51654720979225": {
+    "title": "MTP-B145SG-7A",
+    "price": 7495.0,
+    "compare_at": 7495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10662775652633_52515049570585": {
+    "title": "W-738H-1AV",
+    "price": 2995.0,
+    "compare_at": 2995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
