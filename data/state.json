@@ -4030,5 +4030,33 @@
     "compare_at": 2495.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "10235354579225_51838294229273": {
+    "title": "LTP-SN8YL-2B",
+    "price": 3495.0,
+    "compare_at": 3495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928161394969_50750541758745": {
+    "title": "LTP-E157MR-9A",
+    "price": 6995.0,
+    "compare_at": 6995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928161427737_50750541791513": {
+    "title": "LTP-E157MRB-1B",
+    "price": 7195.0,
+    "compare_at": 7195.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10025409380633_51261497901337": {
+    "title": "A130WEGG-1A",
+    "price": 6495.0,
+    "compare_at": 6495.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
