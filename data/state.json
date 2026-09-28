@@ -3112,7 +3112,7 @@
     "price": 8995.0,
     "compare_at": 8995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10247994278169_51890781487385": {
     "title": "GMA-S140-2A2",
@@ -4056,6 +4056,20 @@
     "title": "A130WEGG-1A",
     "price": 6495.0,
     "compare_at": 6495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928154874137_50750520918297": {
+    "title": "DW-291H-1AV",
+    "price": 3595.0,
+    "compare_at": 3595.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9936410509593_50800528687385": {
+    "title": "AQ-230A-7B",
+    "price": 2395.0,
+    "compare_at": 2395.0,
     "discount_pct": 0.0,
     "available": true
   }
