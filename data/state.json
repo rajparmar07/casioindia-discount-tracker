@@ -4100,5 +4100,12 @@
     "compare_at": 3495.0,
     "discount_pct": 50.0,
     "available": true
+  },
+  "10324495958297_52225293386009": {
+    "title": "MTP-B190SG-9BV",
+    "price": 7995.0,
+    "compare_at": 7995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
