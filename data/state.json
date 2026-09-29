@@ -4079,5 +4079,12 @@
     "compare_at": 6295.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928160543001_50750539694361": {
+    "title": "LTP-1275SG-9A",
+    "price": 2147.5,
+    "compare_at": 4295.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
