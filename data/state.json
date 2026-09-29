@@ -2657,7 +2657,7 @@
     "price": 2695.0,
     "compare_at": 2695.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9936410706201_50800529244441": {
     "title": "AQ-230A-7D",
@@ -3805,7 +3805,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928110407961_50750265852185": {
     "title": "DW-5600RL-1",
@@ -3980,7 +3980,7 @@
     "price": 2195.0,
     "compare_at": 2195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928142782745_50750486544665": {
     "title": "LA670WA-1",
@@ -4070,6 +4070,13 @@
     "title": "AQ-230A-7B",
     "price": 2395.0,
     "compare_at": 2395.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10324495859993_52225293287705": {
+    "title": "MTP-B190L-7BV",
+    "price": 6295.0,
+    "compare_at": 6295.0,
     "discount_pct": 0.0,
     "available": true
   }
