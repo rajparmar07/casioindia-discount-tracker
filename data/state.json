@@ -2482,7 +2482,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10662774866201_52515048227097": {
     "title": "LW-204-9A",
@@ -3434,7 +3434,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928165261593_50750547886361": {
     "title": "AE-1600H-1AV",
@@ -4085,6 +4085,13 @@
     "price": 2147.5,
     "compare_at": 4295.0,
     "discount_pct": 50.0,
+    "available": true
+  },
+  "9928144486681_50750492115225": {
+    "title": "MDV-107D-3AV",
+    "price": 7995.0,
+    "compare_at": 7995.0,
+    "discount_pct": 0.0,
     "available": true
   }
 }
