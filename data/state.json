@@ -4156,5 +4156,12 @@
     "compare_at": 3995.0,
     "discount_pct": 50.0,
     "available": true
+  },
+  "10011112177945_51199076729113": {
+    "title": "A159WGEA-1",
+    "price": 3995.0,
+    "compare_at": 3995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
