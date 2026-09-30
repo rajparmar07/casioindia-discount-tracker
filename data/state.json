@@ -4177,5 +4177,19 @@
     "compare_at": 5995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928162410777_50750543167769": {
+    "title": "LTP-VT01L-2B",
+    "price": 3295.0,
+    "compare_at": 3295.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10011113226521_51199079973145": {
+    "title": "EFV-650D-4AV",
+    "price": 8995.0,
+    "compare_at": 8995.0,
+    "discount_pct": 0.0,
+    "available": false
   }
 }
