@@ -4149,5 +4149,12 @@
     "compare_at": 4395.0,
     "discount_pct": 50.0,
     "available": false
+  },
+  "9928160936217_50750540808473": {
+    "title": "LTP-1302DD-5AV",
+    "price": 1997.5,
+    "compare_at": 3995.0,
+    "discount_pct": 50.0,
+    "available": true
   }
 }
