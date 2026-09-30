@@ -2286,7 +2286,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10025409675545_51261498229017": {
     "title": "GW-5000HS-1",
