@@ -4170,5 +4170,12 @@
     "compare_at": 1995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928168407321_50750552277273": {
+    "title": "MTP-1302PGC-5AV",
+    "price": 5995.0,
+    "compare_at": 5995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
