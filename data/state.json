@@ -3889,7 +3889,7 @@
     "price": 7995.0,
     "compare_at": 7995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928166572313_50750549819673": {
     "title": "LTP-V007L-1B",
@@ -4196,6 +4196,13 @@
     "title": "A168WA-8AY",
     "price": 2995.0,
     "compare_at": 2995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10011115258137_51199084101913": {
+    "title": "MTP-E735B-7AV",
+    "price": 7995.0,
+    "compare_at": 7995.0,
     "discount_pct": 0.0,
     "available": true
   }
