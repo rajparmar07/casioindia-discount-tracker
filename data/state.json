@@ -2230,7 +2230,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928117780761_50750307795225": {
     "title": "GBD-200-1",
