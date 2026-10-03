@@ -4219,5 +4219,19 @@
     "compare_at": 4195.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928161526041_50750541889817": {
+    "title": "LTP-E412PG-4A",
+    "price": 7295.0,
+    "compare_at": 7295.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10679753179417_52739163980057": {
+    "title": "MTP-VT06D-1B",
+    "price": 4995.0,
+    "compare_at": 4995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
