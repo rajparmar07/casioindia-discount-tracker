@@ -2027,7 +2027,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928156709145_50750531797273": {
     "title": "HDC-700-9AV",
@@ -4245,6 +4245,13 @@
     "title": "MTP-1314D-2AV",
     "price": 3395.0,
     "compare_at": 3395.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10817804140825_53185279361305": {
+    "title": "MTP-E740-2A1VDF",
+    "price": 6995.0,
+    "compare_at": 6995.0,
     "discount_pct": 0.0,
     "available": true
   }
