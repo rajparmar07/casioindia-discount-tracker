@@ -1747,7 +1747,7 @@
     "price": 15995.0,
     "compare_at": 15995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10293141733657_52084357038361": {
     "title": "GA-2100CM-5A",
@@ -4238,6 +4238,13 @@
     "title": "F-94WA-8",
     "price": 1495.0,
     "compare_at": 1495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928145174809_50750492967193": {
+    "title": "MTP-1314D-2AV",
+    "price": 3395.0,
+    "compare_at": 3395.0,
     "discount_pct": 0.0,
     "available": true
   }
