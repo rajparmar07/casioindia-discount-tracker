@@ -2447,7 +2447,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928136556825_50750402134297": {
     "title": "A-158WA-1",
@@ -4092,7 +4092,7 @@
     "price": 7995.0,
     "compare_at": 7995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10175297585433_51572638941465": {
     "title": "LTP-1303LL-7A",
@@ -4253,6 +4253,20 @@
     "price": 6995.0,
     "compare_at": 6995.0,
     "discount_pct": 0.0,
+    "available": true
+  },
+  "9928145371417_50750493163801": {
+    "title": "MTP-1374D-1A3V",
+    "price": 5995.0,
+    "compare_at": 5995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928153891097_50750515806489": {
+    "title": "AE-1500WH-2AV",
+    "price": 1347.5,
+    "compare_at": 2695.0,
+    "discount_pct": 50.0,
     "available": true
   }
 }
