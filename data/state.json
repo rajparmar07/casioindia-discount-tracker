@@ -4268,5 +4268,12 @@
     "compare_at": 2695.0,
     "discount_pct": 50.0,
     "available": true
+  },
+  "9928115552537_50750292230425": {
+    "title": "GA-700-7A",
+    "price": 7206.5,
+    "compare_at": 10295.0,
+    "discount_pct": 30.0,
+    "available": true
   }
 }
