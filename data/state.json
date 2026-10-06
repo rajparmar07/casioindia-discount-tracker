@@ -102,7 +102,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10247994966297_51890782306585": {
     "title": "AQ-230EM-2A",
@@ -1250,7 +1250,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928120795417_50750334664985": {
     "title": "GD-350-1B",
