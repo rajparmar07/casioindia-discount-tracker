@@ -3483,7 +3483,7 @@
     "price": 2195.0,
     "compare_at": 2195.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928166801689_50750550081817": {
     "title": "LTP-V007SG-9E",
@@ -4280,6 +4280,13 @@
     "title": "MTP-E740-1AVDF",
     "price": 6995.0,
     "compare_at": 6995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928160870681_50750540677401": {
+    "title": "LTP-1302DD-4A2V",
+    "price": 3995.0,
+    "compare_at": 3995.0,
     "discount_pct": 0.0,
     "available": true
   }
