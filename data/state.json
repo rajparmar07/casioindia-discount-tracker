@@ -4275,5 +4275,12 @@
     "compare_at": 10295.0,
     "discount_pct": 30.0,
     "available": false
+  },
+  "10817720647961_53184862880025": {
+    "title": "MTP-E740-1AVDF",
+    "price": 6995.0,
+    "compare_at": 6995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
