@@ -2006,7 +2006,7 @@
     "price": 5995.0,
     "compare_at": 5995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10293141766425_52084357071129": {
     "title": "GA-2100CM-8A",
