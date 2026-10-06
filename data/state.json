@@ -4296,5 +4296,12 @@
     "compare_at": 2995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "9928120762649_50750334632217": {
+    "title": "GD-100GB-1",
+    "price": 6296.5,
+    "compare_at": 8995.0,
+    "discount_pct": 30.0,
+    "available": true
   }
 }
