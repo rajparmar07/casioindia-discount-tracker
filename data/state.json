@@ -102,7 +102,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10247994966297_51890782306585": {
     "title": "AQ-230EM-2A",
@@ -2496,7 +2496,7 @@
     "price": 1995.0,
     "compare_at": 1995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10247995752729_51890783125785": {
     "title": "GST-B1000D-2A",
@@ -3623,7 +3623,7 @@
     "price": 1695.0,
     "compare_at": 1695.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928168702233_50750552572185": {
     "title": "MTP-VT03BL-7B",
