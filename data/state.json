@@ -316,9 +316,9 @@
   },
   "9928144945433_50750492737817": {
     "title": "MTP-1302DD-5AV",
-    "price": 3995.0,
+    "price": 3196.0,
     "compare_at": 3995.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928145994009_50750493983001": {
@@ -379,9 +379,9 @@
   },
   "9928145338649_50750493131033": {
     "title": "MTP-1314SG-1AV",
-    "price": 4495.0,
+    "price": 3596.0,
     "compare_at": 4495.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "10662775062809_52515048980761": {
@@ -610,9 +610,9 @@
   },
   "9928151957785_50750507974937": {
     "title": "ECB-950MP-1A",
-    "price": 16995.0,
+    "price": 13596.0,
     "compare_at": 16995.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928150941977_50750502830361": {
@@ -680,9 +680,9 @@
   },
   "9928141275417_50750484054297": {
     "title": "AQ-230A-4AMQY",
-    "price": 3495.0,
+    "price": 2796.0,
     "compare_at": 3495.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928157364505_50750534123801": {
@@ -708,9 +708,9 @@
   },
   "9928158282009_50750535205145": {
     "title": "W-218HD-1AV",
-    "price": 3895.0,
+    "price": 3116.0,
     "compare_at": 3895.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "10025411543321_51261500358937": {
@@ -1058,16 +1058,16 @@
   },
   "9928149631257_50750500110617": {
     "title": "MTP-VT01D-2B",
-    "price": 3795.0,
+    "price": 3036.0,
     "compare_at": 3795.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928142127385_50750485561625": {
     "title": "B640WDG-7",
-    "price": 2695.0,
+    "price": 2156.0,
     "compare_at": 2695.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928142061849_50750485496089": {
@@ -1380,9 +1380,9 @@
   },
   "9928152318233_50750508990745": {
     "title": "EFV-C100D-1AV",
-    "price": 10495.0,
+    "price": 8396.0,
     "compare_at": 10495.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928158642457_50750535926041": {
@@ -1415,9 +1415,9 @@
   },
   "9928157888793_50750534713625": {
     "title": "MWD-110H-8BV",
-    "price": 3495.0,
+    "price": 2796.0,
     "compare_at": 3495.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928158609689_50750535893273": {
@@ -1429,9 +1429,9 @@
   },
   "9928154480921_50750516887833": {
     "title": "AEQ-110W-3AV",
-    "price": 3995.0,
+    "price": 3196.0,
     "compare_at": 3995.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "10175297945881_51572640416025": {
@@ -1499,9 +1499,9 @@
   },
   "9928139211033_50750460494105": {
     "title": "A168XESG-9A",
-    "price": 3495.0,
+    "price": 2796.0,
     "compare_at": 3495.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "10247994835225_51890782175513": {
@@ -1534,9 +1534,9 @@
   },
   "9928150515993_50750501290265": {
     "title": "MTP-VT01L-7B2",
-    "price": 3295.0,
+    "price": 2636.0,
     "compare_at": 3295.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9996115837209_51123911393561": {
@@ -2339,9 +2339,9 @@
   },
   "9928157954329_50750534779161": {
     "title": "MWD-110HB-1BV",
-    "price": 4495.0,
+    "price": 3596.0,
     "compare_at": 4495.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928162836761_50750543626521": {
@@ -2766,9 +2766,9 @@
   },
   "9928149434649_50750499881241": {
     "title": "MTP-VT01B-1B",
-    "price": 4995.0,
+    "price": 3996.0,
     "compare_at": 4995.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928160051481_50750538318105": {
@@ -3193,9 +3193,9 @@
   },
   "9928159232281_50750536745241": {
     "title": "WS-1700H-5AV",
-    "price": 2995.0,
+    "price": 2396.0,
     "compare_at": 2995.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928147566873_50750496866585": {
@@ -3732,9 +3732,9 @@
   },
   "9928146354457_50750494376217": {
     "title": "MTP-B145D-3AV",
-    "price": 6995.0,
+    "price": 5596.0,
     "compare_at": 6995.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928136786201_50750402658585": {
