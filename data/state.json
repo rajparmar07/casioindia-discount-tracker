@@ -2482,7 +2482,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10662774866201_52515048227097": {
     "title": "LW-204-9A",
@@ -2566,7 +2566,7 @@
     "price": 2396.0,
     "compare_at": 2995.0,
     "discount_pct": 20.0,
-    "available": true
+    "available": false
   },
   "10025412264217_51261501309209": {
     "title": "GMA-P2100PC-4A",
