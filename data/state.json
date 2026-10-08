@@ -2496,7 +2496,7 @@
     "price": 1995.0,
     "compare_at": 1995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10247995752729_51890783125785": {
     "title": "GST-B1000D-2A",
