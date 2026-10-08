@@ -3462,7 +3462,7 @@
     "price": 7356.0,
     "compare_at": 9195.0,
     "discount_pct": 20.0,
-    "available": true
+    "available": false
   },
   "9928145305881_50750493098265": {
     "title": "MTP-1314L-8AV",
