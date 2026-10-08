@@ -3844,10 +3844,10 @@
   },
   "9928141635865_50750484676889": {
     "title": "AQ-800E-3A",
-    "price": 4795.0,
+    "price": 3836.0,
     "compare_at": 4795.0,
-    "discount_pct": 0.0,
-    "available": false
+    "discount_pct": 20.0,
+    "available": true
   },
   "9928157462809_50750534254873": {
     "title": "MW-620H-1AV",
@@ -4166,10 +4166,10 @@
   },
   "9928163066137_50750543986969": {
     "title": "MQ-24D-7E",
-    "price": 1995.0,
+    "price": 1596.0,
     "compare_at": 1995.0,
-    "discount_pct": 0.0,
-    "available": false
+    "discount_pct": 20.0,
+    "available": true
   },
   "9928168407321_50750552277273": {
     "title": "MTP-1302PGC-5AV",
