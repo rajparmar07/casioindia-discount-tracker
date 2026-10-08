@@ -4303,5 +4303,12 @@
     "compare_at": 8995.0,
     "discount_pct": 30.0,
     "available": true
+  },
+  "9928158707993_50750535991577": {
+    "title": "WS-1400H-1AV",
+    "price": 2396.0,
+    "compare_at": 2995.0,
+    "discount_pct": 20.0,
+    "available": true
   }
 }
