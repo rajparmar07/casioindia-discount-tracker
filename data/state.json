@@ -4351,7 +4351,7 @@
     "price": 3295.0,
     "compare_at": 3295.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928145010969_50750492803353": {
     "title": "MTP-1302DD-9AV",
