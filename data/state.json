@@ -4029,7 +4029,7 @@
     "price": 2495.0,
     "compare_at": 2495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10235354579225_51838294229273": {
     "title": "LTP-SN8YL-2B",
@@ -4071,7 +4071,7 @@
     "price": 1916.0,
     "compare_at": 2395.0,
     "discount_pct": 20.0,
-    "available": true
+    "available": false
   },
   "10324495859993_52225293287705": {
     "title": "MTP-B190L-7BV",
@@ -5121,6 +5121,20 @@
     "price": 7495.0,
     "compare_at": 7495.0,
     "discount_pct": 0.0,
+    "available": true
+  },
+  "10235354382617_51838293967129": {
+    "title": "LTP-SN8YD-2B2",
+    "price": 3695.0,
+    "compare_at": 3695.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10011113685273_51199082266905": {
+    "title": "GA-V01-1A",
+    "price": 8796.0,
+    "compare_at": 10995.0,
+    "discount_pct": 20.0,
     "available": true
   }
 }
