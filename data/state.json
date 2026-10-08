@@ -4365,7 +4365,7 @@
     "price": 1497.5,
     "compare_at": 2995.0,
     "discount_pct": 50.0,
-    "available": true
+    "available": false
   },
   "9928130625817_50750386077977": {
     "title": "GMA-P2100BB-1A",
@@ -4526,7 +4526,7 @@
     "price": 2197.5,
     "compare_at": 4395.0,
     "discount_pct": 50.0,
-    "available": true
+    "available": false
   },
   "9928123941145_50750352851225": {
     "title": "GM-B2100D-1A",
