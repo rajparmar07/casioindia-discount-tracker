@@ -2608,7 +2608,7 @@
     "price": 1795.0,
     "compare_at": 1795.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928153989401_50750516199705": {
     "title": "AE-1500WH-8BV",
@@ -5135,6 +5135,13 @@
     "price": 8796.0,
     "compare_at": 10995.0,
     "discount_pct": 20.0,
+    "available": true
+  },
+  "9928168636697_50750552506649": {
+    "title": "MTP-VT03D-7B",
+    "price": 1847.5,
+    "compare_at": 1847.5,
+    "discount_pct": 0.0,
     "available": true
   }
 }
