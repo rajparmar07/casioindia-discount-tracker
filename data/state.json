@@ -1201,7 +1201,7 @@
     "price": 2695.0,
     "compare_at": 2695.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10662774604057_52515047866649": {
     "title": "A140WE-8A",
@@ -3301,7 +3301,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10195474448665_51654720749849": {
     "title": "AQ-240E-3A",
@@ -3448,7 +3448,7 @@
     "price": 1195.0,
     "compare_at": 1195.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928156250393_50750529437977": {
     "title": "F-91WM-9A",
