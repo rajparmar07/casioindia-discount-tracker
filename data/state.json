@@ -3385,7 +3385,7 @@
     "price": 3695.0,
     "compare_at": 3695.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10195474252057_51654720553241": {
     "title": "EFB-730D-2B",
@@ -5141,6 +5141,27 @@
     "title": "MTP-VT03D-7B",
     "price": 1847.5,
     "compare_at": 1847.5,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928111948057_50750272733465": {
+    "title": "GA-1000-4B",
+    "price": 15996.0,
+    "compare_at": 19995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "10679753310489_52739164111129": {
+    "title": "MTP-VT06L-7B",
+    "price": 4495.0,
+    "compare_at": 4495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928161100057_50750541103385": {
+    "title": "LTP-1302SG-7AV",
+    "price": 4395.0,
+    "compare_at": 4395.0,
     "discount_pct": 0.0,
     "available": true
   }
