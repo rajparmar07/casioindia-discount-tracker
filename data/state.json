@@ -3525,7 +3525,7 @@
     "price": 1195.0,
     "compare_at": 1195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10762626695449_52997587108121": {
     "title": "LTP-B190RGL-4BVDF",
@@ -3851,9 +3851,9 @@
   },
   "9928157462809_50750534254873": {
     "title": "MW-620H-1AV",
-    "price": 2995.0,
+    "price": 2396.0,
     "compare_at": 2995.0,
-    "discount_pct": 0.0,
+    "discount_pct": 20.0,
     "available": true
   },
   "9928155791641_50750526292249": {
