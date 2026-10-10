@@ -928,7 +928,7 @@
     "price": 1497.5,
     "compare_at": 2995.0,
     "discount_pct": 50.0,
-    "available": true
+    "available": false
   },
   "10662774702361_52515047997721": {
     "title": "A140WEG-9A",
@@ -2097,7 +2097,7 @@
     "price": 3195.0,
     "compare_at": 3195.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10175297880345_51572640350489": {
     "title": "LTP-V009D-4",
