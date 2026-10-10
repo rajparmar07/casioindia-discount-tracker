@@ -3308,7 +3308,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928155431193_50750523277593": {
     "title": "F-91W-1",
@@ -3602,7 +3602,7 @@
     "price": 1916.0,
     "compare_at": 2395.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "10679753277721_52739164078361": {
     "title": "MTP-VT06L-1B",
@@ -3917,7 +3917,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928156152089_50750528684313": {
     "title": "F-91WM-3A",
@@ -4421,7 +4421,7 @@
     "price": 3695.0,
     "compare_at": 3695.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928141701401_50750484742425": {
     "title": "AQ-800E-7A2",
