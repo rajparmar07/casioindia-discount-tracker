@@ -1376,7 +1376,7 @@
     "price": 2495.0,
     "compare_at": 2495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928152318233_50750508990745": {
     "title": "EFV-C100D-1AV",
@@ -2080,9 +2080,9 @@
   },
   "9996115607833_51123911164185": {
     "title": "MTP-SN2KL-3A",
-    "price": 4795.0,
+    "price": 3356.5,
     "compare_at": 4795.0,
-    "discount_pct": 0.0,
+    "discount_pct": 30.0,
     "available": true
   },
   "9928153923865_50750515872025": {
@@ -2223,7 +2223,7 @@
     "price": 5995.0,
     "compare_at": 5995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928143208729_50750488707353": {
     "title": "LA680WGA-1",
@@ -2482,7 +2482,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10662774866201_52515048227097": {
     "title": "LW-204-9A",
@@ -3042,7 +3042,7 @@
     "price": 12495.0,
     "compare_at": 12495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928117616921_50750306779417": {
     "title": "GBA-900UU-3A",
@@ -3847,7 +3847,7 @@
     "price": 3836.0,
     "compare_at": 4795.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928157462809_50750534254873": {
     "title": "MW-620H-1AV",
@@ -4057,7 +4057,7 @@
     "price": 6495.0,
     "compare_at": 6495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928154874137_50750520918297": {
     "title": "DW-291H-1AV",
@@ -4127,7 +4127,7 @@
     "price": 1747.5,
     "compare_at": 3495.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "10025409347865_51261497868569": {
     "title": "A130WEG-9A",
@@ -4526,7 +4526,7 @@
     "price": 2197.5,
     "compare_at": 4395.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "9928123941145_50750352851225": {
     "title": "GM-B2100D-1A",
@@ -4554,7 +4554,7 @@
     "price": 7916.0,
     "compare_at": 9895.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928160313625_50750538907929": {
     "title": "LTP-1234LL-7A",
@@ -4603,7 +4603,7 @@
     "price": 2396.0,
     "compare_at": 2995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "10011113652505_51199082234137": {
     "title": "GA-B2100BBR-1A",
@@ -4701,7 +4701,7 @@
     "price": 4795.0,
     "compare_at": 4795.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10025411739929_51261500784921": {
     "title": "EFR-S108DE-2A",
@@ -5225,6 +5225,335 @@
     "title": "GBD-200UU-1",
     "price": 10396.0,
     "compare_at": 12995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928150384921_50750501060889": {
+    "title": "MTP-VT01L-2B",
+    "price": 2636.0,
+    "compare_at": 3295.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928157233433_50750533599513": {
+    "title": "LWS-2200H-1AV",
+    "price": 3196.0,
+    "compare_at": 3995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928123285785_50750350098713": {
+    "title": "GM-5600UB-1",
+    "price": 16995.0,
+    "compare_at": 16995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928162148633_50750542905625": {
+    "title": "LTP-VT01D-7B",
+    "price": 3036.0,
+    "compare_at": 3795.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928165196057_50750547689753": {
+    "title": "AE-1600H-8BV",
+    "price": 2556.0,
+    "compare_at": 3195.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928162869529_50750543659289": {
+    "title": "LTP-VT02D-2A",
+    "price": 1897.5,
+    "compare_at": 3795.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928161263897_50750541627673": {
+    "title": "LTP-E154MR-9A",
+    "price": 7295.0,
+    "compare_at": 7295.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9996117082393_51123915424025": {
+    "title": "MTP-SN2KL-1A",
+    "price": 3836.0,
+    "compare_at": 4795.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928161657113_50750542020889": {
+    "title": "LTP-E415MR-7C",
+    "price": 6995.0,
+    "compare_at": 6995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928161132825_50750541234457": {
+    "title": "LTP-1335D-1A2V",
+    "price": 1697.5,
+    "compare_at": 3395.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928118239513_50750310056217": {
+    "title": "GBD-200SM-1A6",
+    "price": 10396.0,
+    "compare_at": 12995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "10011114438937_51199083184409": {
+    "title": "MRW-230H-1E2V",
+    "price": 2396.0,
+    "compare_at": 2995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9996118425881_51123920601369": {
+    "title": "MTP-SN5YGL-2A",
+    "price": 1797.5,
+    "compare_at": 3595.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928146485529_50750494507289": {
+    "title": "MTP-E321RL-2AV",
+    "price": 5596.0,
+    "compare_at": 6995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928150778137_50750502142233": {
+    "title": "ECB-2000DC-1A",
+    "price": 19995.0,
+    "compare_at": 19995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10175297716505_51572639072537": {
+    "title": "EFV-160D-1A",
+    "price": 8495.0,
+    "compare_at": 8495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928167031065_50750550442265": {
+    "title": "LTP-V007L-9E",
+    "price": 1746.5,
+    "compare_at": 2495.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928162115865_50750542872857": {
+    "title": "LTP-VT01D-4B",
+    "price": 1897.5,
+    "compare_at": 3795.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "10011115094297_51199083938073": {
+    "title": "MTP-B185G-9AV",
+    "price": 6396.0,
+    "compare_at": 7995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928145633561_50750493524249": {
+    "title": "MTP-1374D-7A2V",
+    "price": 5995.0,
+    "compare_at": 5995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9996117377305_51123916177689": {
+    "title": "MTP-SN2KD-2A",
+    "price": 3496.5,
+    "compare_at": 4995.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928162738457_50750543528217": {
+    "title": "LTP-VT02BL-2A",
+    "price": 1747.5,
+    "compare_at": 3495.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928159002905_50750536384793": {
+    "title": "WS-1500H-2AV",
+    "price": 1497.5,
+    "compare_at": 2995.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9996119965977_51123925582105": {
+    "title": "LTP-SN5YGL-2A",
+    "price": 1797.5,
+    "compare_at": 3595.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928121876761_50750345969945": {
+    "title": "GM-2100C-5A",
+    "price": 15995.0,
+    "compare_at": 15995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928161591577_50750541955353": {
+    "title": "LTP-E415MBR-1C",
+    "price": 7295.0,
+    "compare_at": 7295.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9996117803289_51123918078233": {
+    "title": "MTP-SN5YSG-2A",
+    "price": 1997.5,
+    "compare_at": 3995.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "10025411805465_51261500850457": {
+    "title": "EFS-S650DC-1A",
+    "price": 13197.0,
+    "compare_at": 21995.0,
+    "discount_pct": 40.0,
+    "available": true
+  },
+  "9928160018713_50750538219801": {
+    "title": "LTP-1234DD-1A",
+    "price": 1847.5,
+    "compare_at": 3695.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928159985945_50750538187033": {
+    "title": "LTP-1230D-1C",
+    "price": 1497.5,
+    "compare_at": 2995.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "10011114733849_51199083610393": {
+    "title": "MTP-1302PL-5AV",
+    "price": 3996.0,
+    "compare_at": 4995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "10025411248409_51261500064025": {
+    "title": "CRW-001-1",
+    "price": 7995.0,
+    "compare_at": 7995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928156053785_50750528192793": {
+    "title": "F-91WB-8A",
+    "price": 1695.0,
+    "compare_at": 1695.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10011114897689_51199083708697": {
+    "title": "MTP-B185B-7AV",
+    "price": 6396.0,
+    "compare_at": 7995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "10011112898841_51199079350553": {
+    "title": "EFV-550D-2AV",
+    "price": 8796.0,
+    "compare_at": 10995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928168341785_50750552211737": {
+    "title": "MTP-1302PSG-7AV",
+    "price": 5495.0,
+    "compare_at": 5495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10195474678041_51654721077529": {
+    "title": "GMA-P2110-4A",
+    "price": 9195.0,
+    "compare_at": 9195.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10025412460825_51261501571353": {
+    "title": "LTP-VT03L-3BDF",
+    "price": 1747.5,
+    "compare_at": 3495.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "10235355070745_51838296654105": {
+    "title": "MTP-SN8YD-2B2",
+    "price": 3695.0,
+    "compare_at": 3695.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928158314777_50750535237913": {
+    "title": "W-218HM-5BV",
+    "price": 747.5,
+    "compare_at": 1495.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928158118169_50750534943001": {
+    "title": "W-217HM-7BV",
+    "price": 1436.0,
+    "compare_at": 1795.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9996117672217_51123917193497": {
+    "title": "MTP-SN5YSR-5A",
+    "price": 1997.5,
+    "compare_at": 3995.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9928168800537_50750552670489": {
+    "title": "MTP-VT03L-7B",
+    "price": 1747.5,
+    "compare_at": 3495.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "10175297847577_51572640252185": {
+    "title": "EFV-160D-7A",
+    "price": 8495.0,
+    "compare_at": 8495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "9928158445849_50750535729433": {
+    "title": "W-218HM-7AV",
+    "price": 747.5,
+    "compare_at": 1495.0,
+    "discount_pct": 50.0,
+    "available": true
+  },
+  "9936413262105_50800539369753": {
+    "title": "EFS-S570D-3A",
+    "price": 14396.0,
+    "compare_at": 17995.0,
+    "discount_pct": 20.0,
+    "available": true
+  },
+  "9928158183705_50750535008537": {
+    "title": "W-218H-4B2V",
+    "price": 1436.0,
+    "compare_at": 1795.0,
     "discount_pct": 20.0,
     "available": true
   }
