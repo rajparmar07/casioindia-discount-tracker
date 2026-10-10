@@ -2496,7 +2496,7 @@
     "price": 1995.0,
     "compare_at": 1995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10247995752729_51890783125785": {
     "title": "GST-B1000D-2A",
@@ -2566,7 +2566,7 @@
     "price": 2396.0,
     "compare_at": 2995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "10025412264217_51261501309209": {
     "title": "GMA-P2100PC-4A",
@@ -3553,7 +3553,7 @@
     "price": 1897.5,
     "compare_at": 3795.0,
     "discount_pct": 50.0,
-    "available": true
+    "available": false
   },
   "9928133181721_50750392041753": {
     "title": "GMD-S5610BB-1",
@@ -3987,7 +3987,7 @@
     "price": 2396.0,
     "compare_at": 2995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9936413425945_50800540123417": {
     "title": "EFV-150CL-2AV",
