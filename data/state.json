@@ -2608,7 +2608,7 @@
     "price": 1795.0,
     "compare_at": 1795.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928153989401_50750516199705": {
     "title": "AE-1500WH-8BV",
@@ -3959,7 +3959,7 @@
     "price": 4796.0,
     "compare_at": 5995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "10195474579737_51654720979225": {
     "title": "MTP-B145SG-7A",
