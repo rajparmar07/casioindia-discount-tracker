@@ -1208,7 +1208,7 @@
     "price": 6495.0,
     "compare_at": 6495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928110014745_50750263361817": {
     "title": "DW-5600UBB-1",
@@ -2482,7 +2482,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10662774866201_52515048227097": {
     "title": "LW-204-9A",
@@ -3581,7 +3581,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928132985113_50750391681305": {
     "title": "GMD-S5600BA-1",
