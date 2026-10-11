@@ -5016,7 +5016,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928157397273_50750534156569": {
     "title": "MQ-27-7B",
