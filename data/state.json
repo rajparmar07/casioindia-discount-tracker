@@ -4820,7 +4820,7 @@
     "price": 3036.0,
     "compare_at": 3795.0,
     "discount_pct": 20.0,
-    "available": true
+    "available": false
   },
   "9928168767769_50750552637721": {
     "title": "MTP-VT03D-3B",
