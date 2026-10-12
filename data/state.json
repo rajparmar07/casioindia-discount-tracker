@@ -3980,7 +3980,7 @@
     "price": 2195.0,
     "compare_at": 2195.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928142782745_50750486544665": {
     "title": "LA670WA-1",
@@ -4316,7 +4316,7 @@
     "price": 1497.5,
     "compare_at": 2995.0,
     "discount_pct": 50.0,
-    "available": true
+    "available": false
   },
   "9928121680153_50750345642265": {
     "title": "GM-2100B-3A",
