@@ -655,7 +655,7 @@
     "price": 5995.0,
     "compare_at": 5995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10619830436121_52379054833945": {
     "title": "AQ-240E-4A",
