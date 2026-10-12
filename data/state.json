@@ -2860,7 +2860,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9936410837273_50800529637657": {
     "title": "EF-539D-1A2V",
@@ -3819,7 +3819,7 @@
     "price": 2396.0,
     "compare_at": 2995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928143077657_50750486905113": {
     "title": "LA670WGA-9",
