@@ -1054,7 +1054,7 @@
     "price": 3795.0,
     "compare_at": 3795.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928149631257_50750500110617": {
     "title": "MTP-VT01D-2B",
