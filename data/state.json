@@ -3448,7 +3448,7 @@
     "price": 1195.0,
     "compare_at": 1195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928156250393_50750529437977": {
     "title": "F-91WM-9A",
@@ -3504,21 +3504,21 @@
     "price": 1295.0,
     "compare_at": 1295.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10817688764697_53184694976793": {
     "title": "EFS-S660D-1ADF",
     "price": 16995.0,
     "compare_at": 16995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10011115716889_51199084888345": {
     "title": "W-218H-3BV",
     "price": 947.5,
     "compare_at": 1895.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "10247996801305_51890784731417": {
     "title": "F-91WM-1B",
@@ -3931,7 +3931,7 @@
     "price": 2495.0,
     "compare_at": 2495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10293143503129_52084364214553": {
     "title": "W-221H-1BV",
@@ -3980,7 +3980,7 @@
     "price": 2195.0,
     "compare_at": 2195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928142782745_50750486544665": {
     "title": "LA670WA-1",
@@ -4316,7 +4316,7 @@
     "price": 1497.5,
     "compare_at": 2995.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "9928121680153_50750345642265": {
     "title": "GM-2100B-3A",
@@ -4820,7 +4820,7 @@
     "price": 3036.0,
     "compare_at": 3795.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928168767769_50750552637721": {
     "title": "MTP-VT03D-3B",
