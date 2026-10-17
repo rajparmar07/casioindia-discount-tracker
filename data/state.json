@@ -2426,7 +2426,7 @@
     "price": 5995.0,
     "compare_at": 5995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10011114078489_51199082823961": {
     "title": "LF-30W-1A",
