@@ -4561,7 +4561,7 @@
     "price": 3695.0,
     "compare_at": 3695.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10011114242329_51199082987801": {
     "title": "LTP-B166D-2AV",
