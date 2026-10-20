@@ -172,7 +172,7 @@
     "price": 8997.0,
     "compare_at": 14995.0,
     "discount_pct": 40.0,
-    "available": true
+    "available": false
   },
   "10293142126873_52084358873369": {
     "title": "GG-B100X-1A9",
@@ -648,7 +648,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928145436953_50750493229337": {
     "title": "MTP-1374D-1AV",
@@ -2475,7 +2475,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10662775750937_52515049668889": {
     "title": "W-738H-3AV",
@@ -5058,7 +5058,7 @@
     "price": 6296.5,
     "compare_at": 8995.0,
     "discount_pct": 30.0,
-    "available": true
+    "available": false
   },
   "10320391700761_52211211206937": {
     "title": "MTG-B2000B-1A2DR",
@@ -5751,35 +5751,35 @@
     "price": 8046.5,
     "compare_at": 11495.0,
     "discount_pct": 30.0,
-    "available": true
+    "available": false
   },
   "10263080501529_51953378165017": {
     "title": "DW-6900SHB-7",
     "price": 10995.0,
     "compare_at": 10995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10263069622553_51953356210457": {
     "title": "DW-5600SHB-1",
     "price": 8995.0,
     "compare_at": 8995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10247997260057_51890785222937": {
     "title": "ECB-2300D-2A",
     "price": 13197.0,
     "compare_at": 21995.0,
     "discount_pct": 40.0,
-    "available": true
+    "available": false
   },
   "10247997128985_51890785091865": {
     "title": "ECB-2300D-1A",
     "price": 13197.0,
     "compare_at": 21995.0,
     "discount_pct": 40.0,
-    "available": true
+    "available": false
   },
   "10247997194521_51890785157401": {
     "title": "ECB-2300DC-1A",
