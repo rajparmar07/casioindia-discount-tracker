@@ -1208,7 +1208,7 @@
     "price": 6495.0,
     "compare_at": 6495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928110014745_50750263361817": {
     "title": "DW-5600UBB-1",
@@ -1656,7 +1656,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10235354415385_51838293999897": {
     "title": "LTP-SN8YD-3B",
@@ -3294,7 +3294,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10619830501657_52379054965017": {
     "title": "AQ-240E-7A2",
@@ -4015,7 +4015,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928166703385_50750549950745": {
     "title": "LTP-V007L-9B",
@@ -4754,9 +4754,9 @@
   },
   "10247994081561_51890781290777": {
     "title": "GM-S2110-1A1",
-    "price": 11996.0,
+    "price": 13495.5,
     "compare_at": 14995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 10.0,
     "available": true
   },
   "9928150155545_50750500831513": {
@@ -4799,7 +4799,7 @@
     "price": 6996.5,
     "compare_at": 9995.0,
     "discount_pct": 30.0,
-    "available": false
+    "available": true
   },
   "10011113881881_51199082627353": {
     "title": "GMA-P2100M-4A",
@@ -5058,7 +5058,7 @@
     "price": 6296.5,
     "compare_at": 8995.0,
     "discount_pct": 30.0,
-    "available": false
+    "available": true
   },
   "10320391700761_52211211206937": {
     "title": "MTG-B2000B-1A2DR",
@@ -5673,6 +5673,216 @@
     "title": "A130WE-3ADF",
     "price": 4495.0,
     "compare_at": 4495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10630001721625_52409383485721": {
+    "title": "GWG-B1000MG-1A",
+    "price": 69995.0,
+    "compare_at": 69995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10630001623321_52409383387417": {
+    "title": "MTG-B4000B-1A",
+    "price": 100995.0,
+    "compare_at": 100995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10619830731033_52379055194393": {
+    "title": "GW-BX5600CBG-2",
+    "price": 15995.0,
+    "compare_at": 15995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10630001557785_52409383223577": {
+    "title": "MTG-B4000BD-1A",
+    "price": 110000.0,
+    "compare_at": 110000.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10619830567193_52379055030553": {
+    "title": "MTP-B210D-2A2V",
+    "price": 6995.0,
+    "compare_at": 6995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10619830173977_52379054506265": {
+    "title": "EQB-1300DC-3A",
+    "price": 28995.0,
+    "compare_at": 28995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10619830370585_52379054768409": {
+    "title": "GMA-P2100SR-7A",
+    "price": 9495.0,
+    "compare_at": 9495.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10619830141209_52379054473497": {
+    "title": "EQB-1300D-5A",
+    "price": 24995.0,
+    "compare_at": 24995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10293143109913_52084362379545": {
+    "title": "GWG-B1000TLC-1A",
+    "price": 74995.0,
+    "compare_at": 74995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10293142782233_52084361199897": {
+    "title": "GMA-P2126W-8A",
+    "price": 10995.0,
+    "compare_at": 10995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10293141012761_52084355268889": {
+    "title": "BMS-300D-7AV",
+    "price": 8046.5,
+    "compare_at": 11495.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "10263080501529_51953378165017": {
+    "title": "DW-6900SHB-7",
+    "price": 10995.0,
+    "compare_at": 10995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10263069622553_51953356210457": {
+    "title": "DW-5600SHB-1",
+    "price": 8995.0,
+    "compare_at": 8995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247997260057_51890785222937": {
+    "title": "ECB-2300D-2A",
+    "price": 13197.0,
+    "compare_at": 21995.0,
+    "discount_pct": 40.0,
+    "available": true
+  },
+  "10247997128985_51890785091865": {
+    "title": "ECB-2300D-1A",
+    "price": 13197.0,
+    "compare_at": 21995.0,
+    "discount_pct": 40.0,
+    "available": true
+  },
+  "10247997194521_51890785157401": {
+    "title": "ECB-2300DC-1A",
+    "price": 15597.0,
+    "compare_at": 25995.0,
+    "discount_pct": 40.0,
+    "available": true
+  },
+  "10247996113177_51890783682841": {
+    "title": "GBD-200-7",
+    "price": 12995.0,
+    "compare_at": 12995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247995621657_51890782994713": {
+    "title": "DW-6900RGM-5",
+    "price": 11995.0,
+    "compare_at": 11995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247996277017_51890783813913": {
+    "title": "GM-S2110BP-5A",
+    "price": 21995.0,
+    "compare_at": 21995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247995523353_51890782896409": {
+    "title": "GMW-BZ5000GD-9",
+    "price": 54995.0,
+    "compare_at": 54995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247995425049_51890782798105": {
+    "title": "GMW-BZ5000D-1",
+    "price": 49995.0,
+    "compare_at": 49995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247995326745_51890782699801": {
+    "title": "GA-B2100DF-4A",
+    "price": 14995.0,
+    "compare_at": 14995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247995293977_51890782667033": {
+    "title": "GA-B2100DF-1A",
+    "price": 14995.0,
+    "compare_at": 14995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247995556121_51890782929177": {
+    "title": "GW-8200TPF-1",
+    "price": 59995.0,
+    "compare_at": 59995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247994540313_51890781880601": {
+    "title": "MTP-B195D-1A",
+    "price": 6995.0,
+    "compare_at": 6995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247994179865_51890781389081": {
+    "title": "GMA-P2110SC-2A",
+    "price": 6646.5,
+    "compare_at": 9495.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "10247994507545_51890781847833": {
+    "title": "PRW-61ANS-3DR",
+    "price": 39995.0,
+    "compare_at": 39995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10247994376473_51890781585689": {
+    "title": "PRG-340ANS-3",
+    "price": 22995.0,
+    "compare_at": 22995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10235354022169_51838293049625": {
+    "title": "LTP-SN7YR-3A",
+    "price": 5995.0,
+    "compare_at": 5995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10225114546457_51799065723161": {
+    "title": "DW-5600STT-1",
+    "price": 12495.0,
+    "compare_at": 12495.0,
     "discount_pct": 0.0,
     "available": true
   }
