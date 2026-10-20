@@ -1327,7 +1327,7 @@
     "price": 1995.0,
     "compare_at": 1995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928131346713_50750388044057": {
     "title": "GMA-S140M-4A",
@@ -3462,7 +3462,7 @@
     "price": 7356.0,
     "compare_at": 9195.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928145305881_50750493098265": {
     "title": "MTP-1314L-8AV",
@@ -4008,7 +4008,7 @@
     "price": 1695.0,
     "compare_at": 1695.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10247994867993_51890782208281": {
     "title": "A158WEM-3",
@@ -8061,6 +8061,97 @@
     "price": 8396.5,
     "compare_at": 11995.0,
     "discount_pct": 30.0,
+    "available": true
+  },
+  "9928114995481_50750290460953": {
+    "title": "GA-2100WD-1A",
+    "price": 6436.5,
+    "compare_at": 9195.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928114569497_50750288363801": {
+    "title": "GA-2100GB-1A",
+    "price": 6996.5,
+    "compare_at": 9995.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928114110745_50750286692633": {
+    "title": "G-SHOCK  GA-2100FL-8A Men's",
+    "price": 6436.5,
+    "compare_at": 9195.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928113979673_50750286168345": {
+    "title": "G-SHOCK  GA-2100FL-1A Men's",
+    "price": 6436.5,
+    "compare_at": 9195.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928113750297_50750285349145": {
+    "title": "GA-2100-9A9",
+    "price": 6436.5,
+    "compare_at": 9195.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928112374041_50750277124377": {
+    "title": "GA-110GB-1A",
+    "price": 9446.5,
+    "compare_at": 13495.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928112177433_50750273487129": {
+    "title": "GA-100CF-1A9",
+    "price": 6646.5,
+    "compare_at": 9495.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928112636185_50750278304025": {
+    "title": "GA-110WD-1A",
+    "price": 7017.0,
+    "compare_at": 11695.0,
+    "discount_pct": 40.0,
+    "available": true
+  },
+  "9928111882521_50750272536857": {
+    "title": "GA-1000-4A",
+    "price": 13996.5,
+    "compare_at": 19995.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928111784217_50750272307481": {
+    "title": "GA-010-5A",
+    "price": 5946.5,
+    "compare_at": 8495.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928110670105_50750267687193": {
+    "title": "DW-5610UU-8",
+    "price": 6296.5,
+    "compare_at": 8995.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928110506265_50750267130137": {
+    "title": "DW-5600RW-1",
+    "price": 6296.5,
+    "compare_at": 8995.0,
+    "discount_pct": 30.0,
+    "available": true
+  },
+  "9928110833945_50750268375321": {
+    "title": "DW-6900RL-1",
+    "price": 7995.0,
+    "compare_at": 7995.0,
+    "discount_pct": 0.0,
     "available": true
   }
 }
