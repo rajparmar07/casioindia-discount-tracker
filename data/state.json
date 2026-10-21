@@ -5149,7 +5149,7 @@
     "price": 15996.0,
     "compare_at": 19995.0,
     "discount_pct": 20.0,
-    "available": true
+    "available": false
   },
   "10679753310489_52739164111129": {
     "title": "MTP-VT06L-7B",
