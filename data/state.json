@@ -683,7 +683,7 @@
     "price": 2796.0,
     "compare_at": 3495.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928157364505_50750534123801": {
     "title": "LWS-2200H-8AV",
@@ -1180,7 +1180,7 @@
     "price": 2695.0,
     "compare_at": 2695.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928147796249_50750497292569": {
     "title": "MTP-VD01D-2BV",
@@ -1824,7 +1824,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928140554521_50750482088217": {
     "title": "ABL-100WE-1B",
@@ -5261,7 +5261,7 @@
     "price": 2556.0,
     "compare_at": 3195.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928162869529_50750543659289": {
     "title": "LTP-VT02D-2A",
@@ -5450,7 +5450,7 @@
     "price": 7995.0,
     "compare_at": 7995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928156053785_50750528192793": {
     "title": "F-91WB-8A",
@@ -8151,6 +8151,13 @@
     "title": "DW-6900RL-1",
     "price": 7995.0,
     "compare_at": 7995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "10795013210393_53129083584793": {
+    "title": "PRJ-B001B-1DR",
+    "price": 13995.0,
+    "compare_at": 13995.0,
     "discount_pct": 0.0,
     "available": true
   }
