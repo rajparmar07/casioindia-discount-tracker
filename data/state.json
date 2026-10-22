@@ -2475,7 +2475,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10662775750937_52515049668889": {
     "title": "W-738H-3AV",
@@ -4743,7 +4743,7 @@
     "price": 43996.0,
     "compare_at": 54995.0,
     "discount_pct": 20.0,
-    "available": true
+    "available": false
   },
   "10025412526361_51261501636889": {
     "title": "MTP-1302DA-7A",
