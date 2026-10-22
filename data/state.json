@@ -1047,7 +1047,7 @@
     "price": 3196.0,
     "compare_at": 3995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928147501337_50750496735513": {
     "title": "MTP-V300L-1A",
