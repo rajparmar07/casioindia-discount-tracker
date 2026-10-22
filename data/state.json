@@ -4617,7 +4617,7 @@
     "price": 3196.0,
     "compare_at": 3995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "10175297356057_51572638646553": {
     "title": "ECB-S10NIS-7A",
