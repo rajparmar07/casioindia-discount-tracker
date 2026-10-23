@@ -1502,7 +1502,7 @@
     "price": 2796.0,
     "compare_at": 3495.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "10247994835225_51890782175513": {
     "title": "MTP-B195L-3A",
