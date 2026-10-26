@@ -1243,7 +1243,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928147730713_50750497194265": {
     "title": "MTP-VD01D-1E2V",
