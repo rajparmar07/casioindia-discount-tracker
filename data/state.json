@@ -1985,7 +1985,7 @@
     "price": 3196.0,
     "compare_at": 3995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9936412442905_50800535765273": {
     "title": "EFR-571DC-2AV",
@@ -2475,7 +2475,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10662775750937_52515049668889": {
     "title": "W-738H-3AV",
@@ -3847,7 +3847,7 @@
     "price": 3836.0,
     "compare_at": 4795.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928157462809_50750534254873": {
     "title": "MW-620H-1AV",
@@ -4666,7 +4666,7 @@
     "price": 1797.5,
     "compare_at": 3595.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "9996120457497_51123926335769": {
     "title": "LTP-SN5YL-7A",
