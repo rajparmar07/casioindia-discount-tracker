@@ -4071,7 +4071,7 @@
     "price": 2155.5,
     "compare_at": 2395.0,
     "discount_pct": 10.0,
-    "available": true
+    "available": false
   },
   "10324495859993_52225293287705": {
     "title": "MTP-B190L-7BV",
@@ -4862,7 +4862,7 @@
     "price": 1847.5,
     "compare_at": 3695.0,
     "discount_pct": 50.0,
-    "available": true
+    "available": false
   },
   "10817720156441_53184861307161": {
     "title": "EFS-S660PB-1ADF",
