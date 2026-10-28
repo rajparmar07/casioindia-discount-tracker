@@ -2650,7 +2650,7 @@
     "price": 1195.0,
     "compare_at": 1195.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928139309337_50750463869209": {
     "title": "A500WA-1",
@@ -5527,7 +5527,7 @@
     "price": 1747.5,
     "compare_at": 3495.0,
     "discount_pct": 50.0,
-    "available": true
+    "available": false
   },
   "10175297847577_51572640252185": {
     "title": "EFV-160D-7A",
