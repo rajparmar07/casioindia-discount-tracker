@@ -3483,7 +3483,7 @@
     "price": 2195.0,
     "compare_at": 2195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928166801689_50750550081817": {
     "title": "LTP-V007SG-9E",
@@ -8165,6 +8165,48 @@
     "title": "DW-5600BEP-9DR",
     "price": 12995.0,
     "compare_at": 12995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15470055555353_68013954105625": {
+    "title": "GMC-2500G-9A",
+    "price": 20995.0,
+    "compare_at": 20995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15470008893721_68012777931033": {
+    "title": "GMC-2500-1A8",
+    "price": 19995.0,
+    "compare_at": 19995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15468852674841_67964728901913": {
+    "title": "GMC-2500-1A",
+    "price": 19995.0,
+    "compare_at": 19995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15468227363097_67956434501913": {
+    "title": "GMC-2500D-1A2",
+    "price": 26995.0,
+    "compare_at": 26995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15467935990041_67954597757209": {
+    "title": "GMC-2500D-1A",
+    "price": 26995.0,
+    "compare_at": 26995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15467853611289_67954354454809": {
+    "title": "GAC-2500-9A",
+    "price": 9995.0,
+    "compare_at": 9995.0,
     "discount_pct": 0.0,
     "available": true
   }
