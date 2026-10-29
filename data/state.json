@@ -3308,7 +3308,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928155431193_50750523277593": {
     "title": "F-91W-1",
@@ -4071,7 +4071,7 @@
     "price": 2155.5,
     "compare_at": 2395.0,
     "discount_pct": 10.0,
-    "available": false
+    "available": true
   },
   "10324495859993_52225293287705": {
     "title": "MTP-B190L-7BV",
@@ -4197,7 +4197,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10011115258137_51199084101913": {
     "title": "MTP-E735B-7AV",
