@@ -4645,7 +4645,7 @@
     "price": 39996.0,
     "compare_at": 49995.0,
     "discount_pct": 20.0,
-    "available": true
+    "available": false
   },
   "9928115650841_50750292590873": {
     "title": "GA-900-1A",
