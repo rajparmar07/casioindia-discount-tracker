@@ -5597,7 +5597,7 @@
     "price": 1747.5,
     "compare_at": 3495.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "15427889660185_67737080070425": {
     "title": "AQ-230EGG-3ADF",
