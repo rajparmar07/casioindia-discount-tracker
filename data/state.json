@@ -2447,7 +2447,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928136556825_50750402134297": {
     "title": "A-158WA-1",
@@ -3434,7 +3434,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928165261593_50750547886361": {
     "title": "AE-1600H-1AV",
@@ -3728,7 +3728,7 @@
     "price": 1195.0,
     "compare_at": 1195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928146354457_50750494376217": {
     "title": "MTP-B145D-3AV",
