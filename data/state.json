@@ -4771,7 +4771,7 @@
     "price": 4716.0,
     "compare_at": 5895.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9996119114009_51123923976473": {
     "title": "LTP-SN5YSR-5A",
@@ -5016,7 +5016,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928157397273_50750534156569": {
     "title": "MQ-27-7B",
@@ -5527,7 +5527,7 @@
     "price": 1747.5,
     "compare_at": 3495.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "10175297847577_51572640252185": {
     "title": "EFV-160D-7A",
@@ -5597,7 +5597,7 @@
     "price": 1747.5,
     "compare_at": 3495.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "15427889660185_67737080070425": {
     "title": "AQ-230EGG-3ADF",
@@ -7697,7 +7697,7 @@
     "price": 2785.5,
     "compare_at": 3095.0,
     "discount_pct": 10.0,
-    "available": false
+    "available": true
   },
   "9928141603097_50750484644121": {
     "title": "AQ-800E-1A",
