@@ -2447,7 +2447,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928136556825_50750402134297": {
     "title": "A-158WA-1",
@@ -2650,7 +2650,7 @@
     "price": 1195.0,
     "compare_at": 1195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928139309337_50750463869209": {
     "title": "A500WA-1",
@@ -3315,7 +3315,7 @@
     "price": 1295.0,
     "compare_at": 1295.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10817867972889_53185368817945": {
     "title": "F-91WF-3ADF",
