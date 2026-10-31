@@ -4638,7 +4638,7 @@
     "price": 3036.0,
     "compare_at": 3795.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928123515161_50750351180057": {
     "title": "GM-B2100AD-2A",
