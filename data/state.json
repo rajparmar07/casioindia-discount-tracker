@@ -2629,7 +2629,7 @@
     "price": 2695.0,
     "compare_at": 2695.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928143995161_50750491197721": {
     "title": "LW-204-4A",
@@ -5415,7 +5415,7 @@
     "price": 1997.5,
     "compare_at": 3995.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "10025411805465_51261500850457": {
     "title": "EFS-S650DC-1A",
