@@ -1425,7 +1425,7 @@
     "price": 1895.0,
     "compare_at": 1895.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928154480921_50750516887833": {
     "title": "AEQ-110W-3AV",
@@ -3602,7 +3602,7 @@
     "price": 2155.5,
     "compare_at": 2395.0,
     "discount_pct": 10.0,
-    "available": false
+    "available": true
   },
   "10679753277721_52739164078361": {
     "title": "MTP-VT06L-1B",
@@ -3616,7 +3616,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928155234585_50750522229017": {
     "title": "F-200W-9A",
