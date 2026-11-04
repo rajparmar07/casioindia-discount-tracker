@@ -5191,7 +5191,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928112242969_50750273716505": {
     "title": "GA-110-1B",
