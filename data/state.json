@@ -2580,7 +2580,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10662775161113_52515049079065": {
     "title": "UTP-1302PD-2A1V",
