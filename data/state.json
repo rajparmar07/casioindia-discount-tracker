@@ -8173,14 +8173,14 @@
     "price": 20995.0,
     "compare_at": 20995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "15470008893721_68012777931033": {
     "title": "GMC-2500-1A8",
     "price": 19995.0,
     "compare_at": 19995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "15468852674841_67964728901913": {
     "title": "GMC-2500-1A",
@@ -8194,7 +8194,7 @@
     "price": 26995.0,
     "compare_at": 26995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "15467935990041_67954597757209": {
     "title": "GMC-2500D-1A",
