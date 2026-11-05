@@ -3308,7 +3308,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928155431193_50750523277593": {
     "title": "F-91W-1",
@@ -4631,7 +4631,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928161952025_50750542348569": {
     "title": "LTP-V300L-7A2",
@@ -5191,7 +5191,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928112242969_50750273716505": {
     "title": "GA-110-1B",
