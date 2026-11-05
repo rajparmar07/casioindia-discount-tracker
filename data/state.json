@@ -8180,7 +8180,7 @@
     "price": 19995.0,
     "compare_at": 19995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "15468852674841_67964728901913": {
     "title": "GMC-2500-1A",
@@ -8201,7 +8201,7 @@
     "price": 26995.0,
     "compare_at": 26995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "15467853611289_67954354454809": {
     "title": "GAC-2500-9A",
