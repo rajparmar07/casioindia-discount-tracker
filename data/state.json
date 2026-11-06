@@ -3504,7 +3504,7 @@
     "price": 1295.0,
     "compare_at": 1295.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10817688764697_53184694976793": {
     "title": "EFS-S660D-1ADF",
@@ -4428,7 +4428,7 @@
     "price": 3836.0,
     "compare_at": 4795.0,
     "discount_pct": 20.0,
-    "available": true
+    "available": false
   },
   "9928122204441_50750346854681": {
     "title": "GM-2100MF-5A",
@@ -8229,6 +8229,6 @@
     "price": 9995.0,
     "compare_at": 9995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   }
 }
