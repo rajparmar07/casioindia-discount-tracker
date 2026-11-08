@@ -151,7 +151,7 @@
     "price": 3196.0,
     "compare_at": 3995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "10293141111065_52084355531033": {
     "title": "BMS-300GL-5AV",
@@ -2370,7 +2370,7 @@
     "price": 3196.0,
     "compare_at": 3995.0,
     "discount_pct": 20.0,
-    "available": false
+    "available": true
   },
   "9928147697945_50750497161497": {
     "title": "MTP-VD01D-1BV",
@@ -3896,7 +3896,7 @@
     "price": 2495.0,
     "compare_at": 2495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928150090009_50750500765977": {
     "title": "MTP-VT01G-9B",
