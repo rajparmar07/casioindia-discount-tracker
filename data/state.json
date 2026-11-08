@@ -2587,7 +2587,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928148615449_50750498767129": {
     "title": "MTP-VD01L-1EV",
