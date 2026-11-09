@@ -3882,7 +3882,7 @@
     "price": 5995.0,
     "compare_at": 5995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10247993721113_51890780930329": {
     "title": "DWN-5600-1",
