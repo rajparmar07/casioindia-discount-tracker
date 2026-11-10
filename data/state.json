@@ -207,7 +207,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10619830272281_52379054670105": {
     "title": "EFK-110D-2A",
@@ -2447,7 +2447,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928136556825_50750402134297": {
     "title": "A-158WA-1",
