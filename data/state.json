@@ -3868,7 +3868,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10734112112921_52878497120537": {
     "title": "A1000SP-7",
@@ -3980,7 +3980,7 @@
     "price": 2195.0,
     "compare_at": 2195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928142782745_50750486544665": {
     "title": "LA670WA-1",
