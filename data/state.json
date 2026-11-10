@@ -2454,7 +2454,7 @@
     "price": 1895.0,
     "compare_at": 1895.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10025412198681_51261501243673": {
     "title": "GMA-P2100SA-1A1",
