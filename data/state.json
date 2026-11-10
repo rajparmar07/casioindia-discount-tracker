@@ -473,7 +473,7 @@
     "price": 5995.0,
     "compare_at": 5995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10293142389017_52084359889177": {
     "title": "GG-B100XM-1A",
@@ -3665,7 +3665,7 @@
     "price": 1847.5,
     "compare_at": 3695.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "10835855573273_53250094432537": {
     "title": "AQ-230ECK-3ADR",
@@ -3868,7 +3868,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10734112112921_52878497120537": {
     "title": "A1000SP-7",
@@ -3973,7 +3973,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10817838252313_53185318060313": {
     "title": "F-91WF-1ADF",
