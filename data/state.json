@@ -5142,7 +5142,7 @@
     "price": 1847.5,
     "compare_at": 3695.0,
     "discount_pct": 50.0,
-    "available": true
+    "available": false
   },
   "9928111948057_50750272733465": {
     "title": "GA-1000-4B",
