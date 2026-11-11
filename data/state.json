@@ -5142,7 +5142,7 @@
     "price": 1847.5,
     "compare_at": 3695.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "9928111948057_50750272733465": {
     "title": "GA-1000-4B",
@@ -6913,7 +6913,7 @@
     "price": 1647.5,
     "compare_at": 3295.0,
     "discount_pct": 50.0,
-    "available": false
+    "available": true
   },
   "9928162771225_50750543560985": {
     "title": "LTP-VT02BL-3A",
