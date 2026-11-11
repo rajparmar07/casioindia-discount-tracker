@@ -3224,7 +3224,7 @@
     "price": 29995.0,
     "compare_at": 29995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928162607385_50750543397145": {
     "title": "LTP-VT01L-7B3",
@@ -3616,7 +3616,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928155234585_50750522229017": {
     "title": "F-200W-9A",
