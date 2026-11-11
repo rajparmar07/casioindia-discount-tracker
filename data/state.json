@@ -2643,7 +2643,7 @@
     "price": 7995.0,
     "compare_at": 7995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10247997063449_51890785026329": {
     "title": "MQ-24-7BL",
