@@ -827,10 +827,10 @@
   },
   "9928160411929_50750539137305": {
     "title": "LTP-1241D-4A2",
-    "price": 2636.0,
+    "price": 3295.0,
     "compare_at": 3295.0,
-    "discount_pct": 20.0,
-    "available": false
+    "discount_pct": 0.0,
+    "available": true
   },
   "9928145764633_50750493753625": {
     "title": "MTP-1374L-1AV",
@@ -1873,7 +1873,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928162214169_50750542971161": {
     "title": "LTP-VT01G-7B",
@@ -5342,10 +5342,10 @@
   },
   "9928167031065_50750550442265": {
     "title": "LTP-V007L-9E",
-    "price": 1746.5,
+    "price": 2495.0,
     "compare_at": 2495.0,
-    "discount_pct": 30.0,
-    "available": false
+    "discount_pct": 0.0,
+    "available": true
   },
   "9928162115865_50750542872857": {
     "title": "LTP-VT01D-4B",
