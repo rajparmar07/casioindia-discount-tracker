@@ -3497,7 +3497,7 @@
     "price": 2495.0,
     "compare_at": 2495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928155496729_50750523474201": {
     "title": "F-91W-3",
@@ -3739,9 +3739,9 @@
   },
   "9928136786201_50750402658585": {
     "title": "A168WA-3AY",
-    "price": 2396.0,
+    "price": 2995.0,
     "compare_at": 2995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928165916953_50750549098777": {
