@@ -3322,7 +3322,7 @@
     "price": 2195.0,
     "compare_at": 2195.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928159199513_50750536646937": {
     "title": "WS-1700H-1AV",
@@ -3434,7 +3434,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928165261593_50750547886361": {
     "title": "AE-1600H-1AV",
@@ -4306,9 +4306,9 @@
   },
   "9928158707993_50750535991577": {
     "title": "WS-1400H-1AV",
-    "price": 2396.0,
+    "price": 2995.0,
     "compare_at": 2995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928147632409_50750497030425": {
@@ -5020,9 +5020,9 @@
   },
   "9928157397273_50750534156569": {
     "title": "MQ-27-7B",
-    "price": 597.5,
+    "price": 1195.0,
     "compare_at": 1195.0,
-    "discount_pct": 50.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928166080793_50750549295385": {
@@ -5457,7 +5457,7 @@
     "price": 1695.0,
     "compare_at": 1695.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10011114897689_51199083708697": {
     "title": "MTP-B185B-7AV",
