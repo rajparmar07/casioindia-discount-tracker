@@ -3851,10 +3851,10 @@
   },
   "9928157462809_50750534254873": {
     "title": "MW-620H-1AV",
-    "price": 2396.0,
+    "price": 2995.0,
     "compare_at": 2995.0,
-    "discount_pct": 20.0,
-    "available": false
+    "discount_pct": 0.0,
+    "available": true
   },
   "9928155791641_50750526292249": {
     "title": "F-91WB-2A1",
