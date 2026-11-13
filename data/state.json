@@ -3000,7 +3000,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10811863138585_53163129438489": {
     "title": "MTP-SN4KD-1A",
@@ -3434,7 +3434,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928165261593_50750547886361": {
     "title": "AE-1600H-1AV",
@@ -4523,9 +4523,9 @@
   },
   "9928148812057_50750498996505": {
     "title": "MTP-VD03B-3A",
-    "price": 2197.5,
+    "price": 4395.0,
     "compare_at": 4395.0,
-    "discount_pct": 50.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928123941145_50750352851225": {
