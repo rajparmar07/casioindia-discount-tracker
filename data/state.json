@@ -8300,5 +8300,33 @@
     "compare_at": 6995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "15519635833113_68704021348633": {
+    "title": "AQ-240E-1A",
+    "price": 4995.0,
+    "compare_at": 4995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15519635767577_68704021250329": {
+    "title": "AQ-230GA-3AMQY",
+    "price": 5995.0,
+    "compare_at": 5995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15518932795673_68701032022297": {
+    "title": "GMA-S160-7A",
+    "price": 9995.0,
+    "compare_at": 9995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15518812012825_68698556236057": {
+    "title": "GMA-S160-2B",
+    "price": 9995.0,
+    "compare_at": 9995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
