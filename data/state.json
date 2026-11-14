@@ -1065,9 +1065,9 @@
   },
   "9928142127385_50750485561625": {
     "title": "B640WDG-7",
-    "price": 2156.0,
+    "price": 2695.0,
     "compare_at": 2695.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928142061849_50750485496089": {
@@ -2258,7 +2258,7 @@
     "price": 1995.0,
     "compare_at": 1995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928166375705_50750549623065": {
     "title": "LTP-V007D-4E",
@@ -2566,7 +2566,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10025412264217_51261501309209": {
     "title": "GMA-P2100PC-4A",
@@ -3896,7 +3896,7 @@
     "price": 2495.0,
     "compare_at": 2495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928150090009_50750500765977": {
     "title": "MTP-VT01G-9B",
@@ -4355,9 +4355,9 @@
   },
   "9928145010969_50750492803353": {
     "title": "MTP-1302DD-9AV",
-    "price": 3196.0,
+    "price": 3995.0,
     "compare_at": 3995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928159035673_50750536417561": {
