@@ -778,9 +778,9 @@
   },
   "9996116918553_51123915260185": {
     "title": "MTP-SN3KD-2A",
-    "price": 4495.5,
+    "price": 4995.0,
     "compare_at": 4995.0,
-    "discount_pct": 10.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9996115050777_51123910508825": {
@@ -1369,7 +1369,7 @@
     "price": 7795.0,
     "compare_at": 7795.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928153825561_50750514135321": {
     "title": "AE-1500WH-1AV",
@@ -1982,9 +1982,9 @@
   },
   "9928147337497_50750496375065": {
     "title": "MTP-V300D-1A",
-    "price": 3196.0,
+    "price": 3995.0,
     "compare_at": 3995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9936412442905_50800535765273": {
@@ -3826,7 +3826,7 @@
     "price": 3995.0,
     "compare_at": 3995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928167653657_50750551097625": {
     "title": "LTP-VT04D-7A",
