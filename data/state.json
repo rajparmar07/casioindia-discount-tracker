@@ -2080,9 +2080,9 @@
   },
   "9996115607833_51123911164185": {
     "title": "MTP-SN2KL-3A",
-    "price": 3356.5,
+    "price": 4795.0,
     "compare_at": 4795.0,
-    "discount_pct": 30.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928153923865_50750515872025": {
@@ -2447,7 +2447,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928136556825_50750402134297": {
     "title": "A-158WA-1",
@@ -4691,9 +4691,9 @@
   },
   "9928152973593_50750511874329": {
     "title": "EQS-920DB-1AV",
-    "price": 11596.0,
+    "price": 14495.0,
     "compare_at": 14495.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9936410771737_50800529441049": {
