@@ -2895,7 +2895,7 @@
     "price": 7197.0,
     "compare_at": 11995.0,
     "discount_pct": 40.0,
-    "available": true
+    "available": false
   },
   "10293140881689_52084353630489": {
     "title": "BMS-300D-1AV",
