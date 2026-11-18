@@ -1103,7 +1103,7 @@
     "price": 6495.0,
     "compare_at": 6495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10175297913113_51572640383257": {
     "title": "LTP-V009D-2",
@@ -2227,10 +2227,10 @@
   },
   "9928143208729_50750488707353": {
     "title": "LA680WGA-1",
-    "price": 4495.5,
+    "price": 4995.0,
     "compare_at": 4995.0,
-    "discount_pct": 10.0,
-    "available": false
+    "discount_pct": 0.0,
+    "available": true
   },
   "9928117780761_50750307795225": {
     "title": "GBD-200-1",
@@ -3308,7 +3308,7 @@
     "price": 4995.0,
     "compare_at": 4995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928155431193_50750523277593": {
     "title": "F-91W-1",
