@@ -2496,7 +2496,7 @@
     "price": 1995.0,
     "compare_at": 1995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10247995752729_51890783125785": {
     "title": "GST-B1000D-2A",
@@ -3179,9 +3179,9 @@
   },
   "9928169259289_50750554439961": {
     "title": "MWA-300H-2AV",
-    "price": 3964.0,
+    "price": 4955.0,
     "compare_at": 4955.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "10235353694489_51838289281305": {
@@ -4215,9 +4215,9 @@
   },
   "9928147599641_50750496932121": {
     "title": "MTP-VD01B-1BV",
-    "price": 3356.0,
+    "price": 4195.0,
     "compare_at": 4195.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928161526041_50750541889817": {
