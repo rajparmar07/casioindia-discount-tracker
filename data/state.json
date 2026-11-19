@@ -2496,7 +2496,7 @@
     "price": 1995.0,
     "compare_at": 1995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10247995752729_51890783125785": {
     "title": "GST-B1000D-2A",
@@ -3956,9 +3956,9 @@
   },
   "10011115290905_51199084134681": {
     "title": "MTP-E735D-1AV",
-    "price": 4796.0,
+    "price": 5995.0,
     "compare_at": 5995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "10195474579737_51654720979225": {
@@ -5191,7 +5191,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "9928112242969_50750273716505": {
     "title": "GA-110-1B",
