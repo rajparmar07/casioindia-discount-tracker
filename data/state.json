@@ -393,9 +393,9 @@
   },
   "10235354513689_51838294130969": {
     "title": "LTP-SN8YG-3B",
-    "price": 3146.5,
+    "price": 4495.0,
     "compare_at": 4495.0,
-    "discount_pct": 30.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928117518617_50750305894681": {
@@ -610,9 +610,9 @@
   },
   "9928151957785_50750507974937": {
     "title": "ECB-950MP-1A",
-    "price": 15295.5,
+    "price": 16995.0,
     "compare_at": 16995.0,
-    "discount_pct": 10.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928150941977_50750502830361": {
@@ -1187,7 +1187,7 @@
     "price": 2995.0,
     "compare_at": 2995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928139637017_50750471045401": {
     "title": "A700WEV-7A",
@@ -2003,9 +2003,9 @@
   },
   "9928141472025_50750484316441": {
     "title": "AQ-230GA-5AMQY",
-    "price": 4796.0,
+    "price": 5995.0,
     "compare_at": 5995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "10293141766425_52084357071129": {
@@ -2496,7 +2496,7 @@
     "price": 1995.0,
     "compare_at": 1995.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10247995752729_51890783125785": {
     "title": "GST-B1000D-2A",
@@ -5016,7 +5016,7 @@
     "price": 4495.0,
     "compare_at": 4495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928157397273_50750534156569": {
     "title": "MQ-27-7B",
