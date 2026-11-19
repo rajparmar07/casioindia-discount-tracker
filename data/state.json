@@ -1894,7 +1894,7 @@
     "price": 5995.0,
     "compare_at": 5995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928167227673_50750550671641": {
     "title": "LTP-V300D-4A",
@@ -2895,7 +2895,7 @@
     "price": 7197.0,
     "compare_at": 11995.0,
     "discount_pct": 40.0,
-    "available": false
+    "available": true
   },
   "10293140881689_52084353630489": {
     "title": "BMS-300D-1AV",
