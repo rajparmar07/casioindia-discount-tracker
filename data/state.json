@@ -1863,9 +1863,9 @@
   },
   "9936411590937_50800533078297": {
     "title": "EFR-526D-2AV",
-    "price": 6796.0,
+    "price": 8495.0,
     "compare_at": 8495.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928161034521_50750540972313": {
@@ -2041,7 +2041,7 @@
     "price": 12495.0,
     "compare_at": 12495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928146452761_50750494474521": {
     "title": "MTP-E321D-1AV",
