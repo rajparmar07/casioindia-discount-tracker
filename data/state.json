@@ -316,9 +316,9 @@
   },
   "9928144945433_50750492737817": {
     "title": "MTP-1302DD-5AV",
-    "price": 3196.0,
+    "price": 3995.0,
     "compare_at": 3995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928145994009_50750493983001": {
@@ -2447,7 +2447,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928136556825_50750402134297": {
     "title": "A-158WA-1",
