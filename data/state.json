@@ -1513,10 +1513,10 @@
   },
   "9928130494745_50750385160473": {
     "title": "GMA-P2100-7A",
-    "price": 6796.0,
+    "price": 8495.0,
     "compare_at": 8495.0,
-    "discount_pct": 20.0,
-    "available": false
+    "discount_pct": 0.0,
+    "available": true
   },
   "10235354218777_51838293508377": {
     "title": "LTP-SN8YD-1B",
