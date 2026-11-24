@@ -116,7 +116,7 @@
     "price": 9995.0,
     "compare_at": 9995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10247995654425_51890783027481": {
     "title": "DW-5600RGM-1",
@@ -3067,9 +3067,9 @@
   },
   "9928111522073_50750271258905": {
     "title": "GA-010-2A",
-    "price": 6796.0,
+    "price": 8495.0,
     "compare_at": 8495.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928135835929_50750400889113": {
@@ -5055,10 +5055,10 @@
   },
   "10293140816153_52084353597721": {
     "title": "BMS-100L-5AV",
-    "price": 6296.5,
+    "price": 8995.0,
     "compare_at": 8995.0,
-    "discount_pct": 30.0,
-    "available": false
+    "discount_pct": 0.0,
+    "available": true
   },
   "10320391700761_52211211206937": {
     "title": "MTG-B2000B-1A2DR",
