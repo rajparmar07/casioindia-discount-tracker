@@ -8328,5 +8328,12 @@
     "compare_at": 9995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "15564628132121_68859826995481": {
+    "title": "GM-6900XG-8",
+    "price": 25995.0,
+    "compare_at": 25995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
