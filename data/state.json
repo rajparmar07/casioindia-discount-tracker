@@ -8335,5 +8335,19 @@
     "compare_at": 25995.0,
     "discount_pct": 0.0,
     "available": true
+  },
+  "15564614533401_68859604828441": {
+    "title": "AQ-240EAC-3A",
+    "price": 8995.0,
+    "compare_at": 8995.0,
+    "discount_pct": 0.0,
+    "available": true
+  },
+  "15564617941273_68859672101145": {
+    "title": "AQ-240EGAC-9A",
+    "price": 10995.0,
+    "compare_at": 10995.0,
+    "discount_pct": 0.0,
+    "available": true
   }
 }
