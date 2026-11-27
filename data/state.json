@@ -1142,9 +1142,9 @@
   },
   "9928148680985_50750498832665": {
     "title": "MTP-VD01L-2BV",
-    "price": 2236.0,
+    "price": 2795.0,
     "compare_at": 2795.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928142225689_50750485725465": {
@@ -3315,7 +3315,7 @@
     "price": 1295.0,
     "compare_at": 1295.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10817867972889_53185368817945": {
     "title": "F-91WF-3ADF",
@@ -3952,7 +3952,7 @@
     "price": 1395.0,
     "compare_at": 1395.0,
     "discount_pct": 0.0,
-    "available": true
+    "available": false
   },
   "10011115290905_51199084134681": {
     "title": "MTP-E735D-1AV",
