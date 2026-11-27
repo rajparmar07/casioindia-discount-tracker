@@ -2465,9 +2465,9 @@
   },
   "9928117223705_50750302716185": {
     "title": "GA-B2100MF-1A",
-    "price": 9596.0,
+    "price": 11995.0,
     "compare_at": 11995.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "10293140521241_52084352811289": {
@@ -4803,9 +4803,9 @@
   },
   "10011113881881_51199082627353": {
     "title": "GMA-P2100M-4A",
-    "price": 6796.0,
+    "price": 8495.0,
     "compare_at": 8495.0,
-    "discount_pct": 20.0,
+    "discount_pct": 0.0,
     "available": true
   },
   "9928120860953_50750334730521": {
@@ -5191,7 +5191,7 @@
     "price": 3495.0,
     "compare_at": 3495.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "9928112242969_50750273716505": {
     "title": "GA-110-1B",
@@ -5765,7 +5765,7 @@
     "price": 8995.0,
     "compare_at": 8995.0,
     "discount_pct": 0.0,
-    "available": false
+    "available": true
   },
   "10247997260057_51890785222937": {
     "title": "ECB-2300D-2A",
